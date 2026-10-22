@@ -13,6 +13,7 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(HERE, "Common_Terms_Glossary_IT_OT_Security_v1.docx")
 OUT = os.path.join(HERE, "glossary", "glossary.json")
 ADD = os.path.join(HERE, "glossary", "additions.json")
+REM = os.path.join(HERE, "glossary", "removals.json")
 
 CATEGORY = {"A": "OT and ICS", "C": "Core IT", "D": "IT security", "E": "Network and server architecture", "F": "ITIL",
             "G": "Regulations and frameworks", "H": "Risk (SCF)", "J": "SAP", "K": "PeopleSoft", "L": "AVEVA PI", "M": "Zenon SCADA"}
@@ -109,10 +110,20 @@ def build():
                     elif f in o and f != "category": del o[f]
             continue
         seen[k] = e; res.append(e)
+    if os.path.exists(REM):                        # entries replaced in additions.json, duplicates, or notes rather than terms
+        gone = {t.lower() for t in json.load(open(REM, encoding="utf-8"))["terms"]}
+        missing = gone - {e["term"].lower() for e in res}
+        assert not missing, "removals.json names terms the Word glossary doesn't have: " + ", ".join(sorted(missing))
+        res = [e for e in res if e["term"].lower() not in gone]
     if os.path.exists(ADD):
         for e in json.load(open(ADD, encoding="utf-8")):
             k = e["term"].lower()
             res = [x for x in res if x["term"].lower() != k] + [e]
+    names = {}
+    for e in res:                                  # a name or alias used by two entries would make a document's glossary ambiguous
+        for n in [e["term"]] + e["aliases"]:
+            assert n.lower() not in names or names[n.lower()] == e["term"], f"'{n}' is used by both {names[n.lower()]} and {e['term']}"
+            names[n.lower()] = e["term"]
     res.sort(key=lambda e: e["term"].lower())
     return res
 
