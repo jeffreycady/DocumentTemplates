@@ -1,0 +1,3025 @@
+{
+ "version": 1,
+ "license": "CC-BY-4.0",
+ "credit": "Templates by Jeff Cady (JCady LLC), CC BY 4.0",
+ "source": "https://github.com/jeffreycady/DocumentTemplates",
+ "templates": [
+  {
+   "id": "hld",
+   "file": "High-Level Design (HLD) Document Template.docx",
+   "docx": "hld.docx",
+   "title": "High-Level Design (HLD)",
+   "category": "Design",
+   "summary": "The design of a system or solution: its purpose, architecture, components, requirements, risks and dependencies.",
+   "fields": [
+    {
+     "key": "subject",
+     "label": "Solution or application",
+     "type": "text",
+     "group": "Document details",
+     "hint": "The system or solution this design covers"
+    },
+    {
+     "key": "version",
+     "label": "Version",
+     "type": "text",
+     "group": "Document details",
+     "hint": "1.0",
+     "common": true
+    },
+    {
+     "key": "author",
+     "label": "Author(s)",
+     "type": "text",
+     "group": "Document details",
+     "common": true
+    },
+    {
+     "key": "date",
+     "label": "Date",
+     "type": "date",
+     "group": "Document details",
+     "common": true
+    },
+    {
+     "key": "owners",
+     "label": "Solution/application owners",
+     "type": "rows",
+     "group": "Document details",
+     "cols": [
+      {
+       "key": "name",
+       "label": "Owner"
+      },
+      {
+       "key": "title",
+       "label": "Position"
+      },
+      {
+       "key": "date",
+       "label": "Date"
+      }
+     ],
+     "heads": [
+      "Owner",
+      "Position",
+      "Date"
+     ]
+    },
+    {
+     "key": "changelog",
+     "label": "Change log",
+     "type": "rows",
+     "group": "Document details",
+     "cols": [
+      {
+       "key": "desc",
+       "label": "Description of change"
+      },
+      {
+       "key": "requestor",
+       "label": "Requestor"
+      },
+      {
+       "key": "date",
+       "label": "Date revised"
+      },
+      {
+       "key": "decision",
+       "label": "Decision"
+      },
+      {
+       "key": "ddate",
+       "label": "Decision date"
+      },
+      {
+       "key": "comments",
+       "label": "Comments"
+      }
+     ],
+     "heads": [
+      "Description of Change",
+      "Requestor",
+      "Date Revised",
+      "Decision",
+      "Decision Date",
+      "Comments"
+     ]
+    },
+    {
+     "key": "purpose",
+     "label": "Purpose",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Explain the purpose of the document and what it aims to achieve."
+    },
+    {
+     "key": "scope",
+     "label": "Scope",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Define the scope of the system or solution being designed."
+    },
+    {
+     "key": "audience",
+     "label": "Audience",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Specify the intended audience for the document."
+    },
+    {
+     "key": "description",
+     "label": "Description",
+     "type": "textarea",
+     "group": "System Overview",
+     "hint": "High-level description of the system or solution."
+    },
+    {
+     "key": "objectives",
+     "label": "Objectives",
+     "type": "textarea",
+     "group": "System Overview",
+     "hint": "Business goals and objectives the system is intended to fulfill."
+    },
+    {
+     "key": "keyFeatures",
+     "label": "Key Features",
+     "type": "textarea",
+     "group": "System Overview",
+     "hint": "Overview of the main features or functionalities."
+    },
+    {
+     "key": "assumptions",
+     "label": "Assumptions",
+     "type": "textarea",
+     "group": "System Overview",
+     "hint": "High-level assumptions relevant to the design."
+    },
+    {
+     "key": "systemArchitectureDiagram",
+     "label": "System Architecture Diagram",
+     "type": "textarea",
+     "group": "Architecture Overview",
+     "hint": "High-level diagram showing the major components, their relationships, and interactions."
+    },
+    {
+     "key": "technologyStack",
+     "label": "Technology Stack",
+     "type": "textarea",
+     "group": "Architecture Overview",
+     "hint": "List of technologies, platforms, or frameworks to be used."
+    },
+    {
+     "key": "integrationPoints",
+     "label": "Integration Points",
+     "type": "textarea",
+     "group": "Architecture Overview",
+     "hint": "Overview of how the system integrates with other systems or services."
+    },
+    {
+     "key": "modulesComponents",
+     "label": "Modules/Components",
+     "type": "textarea",
+     "group": "Functional Overview",
+     "hint": "Brief description of key modules or components."
+    },
+    {
+     "key": "dataFlow",
+     "label": "Data Flow",
+     "type": "textarea",
+     "group": "Functional Overview",
+     "hint": "High-level data flow between components, systems, or users."
+    },
+    {
+     "key": "userRoles",
+     "label": "User Roles",
+     "type": "textarea",
+     "group": "Functional Overview",
+     "hint": "High-level description of user roles and their interactions with the system."
+    },
+    {
+     "key": "performance",
+     "label": "Performance",
+     "type": "textarea",
+     "group": "NON-FUNCTIONAL Requirements",
+     "hint": "High-level performance expectations."
+    },
+    {
+     "key": "scalability",
+     "label": "Scalability",
+     "type": "textarea",
+     "group": "NON-FUNCTIONAL Requirements",
+     "hint": "Scalability considerations."
+    },
+    {
+     "key": "security",
+     "label": "Security",
+     "type": "textarea",
+     "group": "NON-FUNCTIONAL Requirements",
+     "hint": "Security requirements at a high level."
+    },
+    {
+     "key": "availability",
+     "label": "Availability",
+     "type": "textarea",
+     "group": "NON-FUNCTIONAL Requirements",
+     "hint": "Uptime and availability expectations."
+    },
+    {
+     "key": "monitoring",
+     "label": "Monitoring",
+     "type": "textarea",
+     "group": "NON-FUNCTIONAL Requirements",
+     "hint": "What system(s) will monitor Performance Scalability Security and Availability."
+    },
+    {
+     "key": "risks",
+     "label": "Risks",
+     "type": "textarea",
+     "group": "Risks and Dependencies",
+     "hint": "High-level risks that could impact the design or implementation."
+    },
+    {
+     "key": "dependencies",
+     "label": "Dependencies",
+     "type": "textarea",
+     "group": "Risks and Dependencies",
+     "hint": "Dependencies on other systems, teams, or external factors."
+    },
+    {
+     "key": "appendices",
+     "label": "Appendices",
+     "type": "textarea",
+     "group": "Appendices",
+     "hint": "Additional diagrams References supporting information"
+    }
+   ],
+   "ops": [
+    {
+     "op": "replace",
+     "p": 0,
+     "find": "{Solution/Application}",
+     "key": "subject",
+     "expect": "High-Level Design (HLD) Document {Solution/Application}"
+    },
+    {
+     "op": "after",
+     "p": 2,
+     "label": "Version:",
+     "key": "version",
+     "expect": "Version: {Number}"
+    },
+    {
+     "op": "after",
+     "p": 3,
+     "label": "Author(s):",
+     "key": "author",
+     "expect": "Author(s): {Name(s) of Author(s)}"
+    },
+    {
+     "op": "after",
+     "p": 4,
+     "label": "Date:",
+     "key": "date",
+     "expect": "Date: {Date of creation or update}"
+    },
+    {
+     "op": "rows",
+     "t": 0,
+     "start": 1,
+     "key": "owners",
+     "cols": [
+      "name",
+      "title",
+      "date"
+     ],
+     "expect": [
+      "Owner",
+      "Position",
+      "Date"
+     ],
+     "max": 4
+    },
+    {
+     "op": "rows",
+     "t": 1,
+     "start": 1,
+     "key": "changelog",
+     "cols": [
+      "desc",
+      "requestor",
+      "date",
+      "decision",
+      "ddate",
+      "comments"
+     ],
+     "expect": [
+      "Description of Change",
+      "Requestor",
+      "Date Revised",
+      "Decision",
+      "Decision Date",
+      "Comments"
+     ],
+     "max": 5
+    },
+    {
+     "op": "para",
+     "p": 11,
+     "key": "purpose",
+     "also": [],
+     "expect": "{Explain the purpose of the document and what it aims to achieve.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 13,
+     "key": "scope",
+     "also": [],
+     "expect": "{Define the scope of the system or solution being designed.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 15,
+     "key": "audience",
+     "also": [],
+     "expect": "{Specify the intended audience for the document.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 18,
+     "key": "description",
+     "also": [],
+     "expect": "{High-level description of the system or solution.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 20,
+     "key": "objectives",
+     "also": [],
+     "expect": "{Business goals and objectives the system is intended to fulfill.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 22,
+     "key": "keyFeatures",
+     "also": [],
+     "expect": "{Overview of the main features or functionalities.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 24,
+     "key": "assumptions",
+     "also": [],
+     "expect": "{High-level assumptions relevant to the design.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 27,
+     "key": "systemArchitectureDiagram",
+     "also": [],
+     "expect": "{High-level diagram showing the major components, their relationships, and interactions.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 29,
+     "key": "technologyStack",
+     "also": [],
+     "expect": "{List of technologies, platforms, or frameworks to be used.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 31,
+     "key": "integrationPoints",
+     "also": [],
+     "expect": "{Overview of how the system integrates with other systems or services.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 34,
+     "key": "modulesComponents",
+     "also": [],
+     "expect": "{Brief description of key modules or components.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 36,
+     "key": "dataFlow",
+     "also": [],
+     "expect": "{High-level data flow between components, systems, or users.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 38,
+     "key": "userRoles",
+     "also": [],
+     "expect": "{High-level description of user roles and their interactions with the system.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 41,
+     "key": "performance",
+     "also": [],
+     "expect": "{High-level performance expectations.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 43,
+     "key": "scalability",
+     "also": [],
+     "expect": "{Scalability considerations.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 45,
+     "key": "security",
+     "also": [],
+     "expect": "{Security requirements at a high level.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 47,
+     "key": "availability",
+     "also": [],
+     "expect": "{Uptime and availability expectations.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 49,
+     "key": "monitoring",
+     "also": [],
+     "expect": "{What system(s) will monitor Performance Scalability Security and Availability.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 53,
+     "key": "risks",
+     "also": [],
+     "expect": "{High-level risks that could impact the design or implementation.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 58,
+     "key": "dependencies",
+     "also": [],
+     "expect": "{Dependencies on other systems, teams, or external factors.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "glossary",
+     "p": 60,
+     "also": [
+      61,
+      62
+     ],
+     "label": null,
+     "expect": "{Definitions of terms",
+     "alsoExpect": [
+      "Acronyms",
+      "jargon used in the document.}"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 64,
+     "key": "appendices",
+     "also": [
+      65,
+      66
+     ],
+     "expect": "{Additional diagrams",
+     "alsoExpect": [
+      "References",
+      "supporting information}"
+     ]
+    }
+   ],
+   "glossary": true
+  },
+  {
+   "id": "lld",
+   "file": "Low-Level Design (LLD) Document Template.docx",
+   "docx": "lld.docx",
+   "title": "Low-Level Design (LLD)",
+   "category": "Design",
+   "summary": "The detailed design behind a high-level design: modules, data, interfaces, configuration and security.",
+   "fields": [
+    {
+     "key": "subject",
+     "label": "Solution or application",
+     "type": "text",
+     "group": "Document details",
+     "hint": "The system or solution this design covers"
+    },
+    {
+     "key": "version",
+     "label": "Version",
+     "type": "text",
+     "group": "Document details",
+     "hint": "1.0",
+     "common": true
+    },
+    {
+     "key": "author",
+     "label": "Author(s)",
+     "type": "text",
+     "group": "Document details",
+     "common": true
+    },
+    {
+     "key": "owner",
+     "label": "Solution owner(s)",
+     "type": "text",
+     "group": "Document details",
+     "common": true
+    },
+    {
+     "key": "hldLink",
+     "label": "High-level design document",
+     "type": "text",
+     "group": "Document details",
+     "hint": "Link to the HLD this LLD was made from"
+    },
+    {
+     "key": "date",
+     "label": "Date",
+     "type": "date",
+     "group": "Document details",
+     "common": true
+    },
+    {
+     "key": "owners",
+     "label": "Solution/application owners",
+     "type": "rows",
+     "group": "Document details",
+     "cols": [
+      {
+       "key": "name",
+       "label": "Owner"
+      },
+      {
+       "key": "title",
+       "label": "Position"
+      },
+      {
+       "key": "date",
+       "label": "Date"
+      }
+     ],
+     "heads": [
+      "Owner",
+      "Position",
+      "Date"
+     ]
+    },
+    {
+     "key": "changelog",
+     "label": "Change log",
+     "type": "rows",
+     "group": "Document details",
+     "cols": [
+      {
+       "key": "desc",
+       "label": "Description of change"
+      },
+      {
+       "key": "requestor",
+       "label": "Requestor"
+      },
+      {
+       "key": "date",
+       "label": "Date revised"
+      },
+      {
+       "key": "decision",
+       "label": "Decision"
+      },
+      {
+       "key": "ddate",
+       "label": "Decision date"
+      },
+      {
+       "key": "comments",
+       "label": "Comments"
+      }
+     ],
+     "heads": [
+      "Description of Change",
+      "Requestor",
+      "Date Revised",
+      "Decision",
+      "Decision Date",
+      "Comments"
+     ]
+    },
+    {
+     "key": "purpose",
+     "label": "Purpose",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Explain the purpose of the document and what it aims to achieve."
+    },
+    {
+     "key": "scope",
+     "label": "Scope",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Define the scope of the system or solution being designed."
+    },
+    {
+     "key": "audience",
+     "label": "Audience",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Specify the intended audience for the document."
+    },
+    {
+     "key": "moduleComponentDesign",
+     "label": "Module/Component Design",
+     "type": "textarea",
+     "group": "Detailed Design",
+     "hint": "Detailed description of each module/component. Input, output, and processing details. Specific algorithms or logic to be implemented."
+    },
+    {
+     "key": "dataStructures",
+     "label": "Data Structures",
+     "type": "textarea",
+     "group": "Detailed Design",
+     "hint": "Detailed data models, schemas, or database design. ER diagrams, table structures, and relationships."
+    },
+    {
+     "key": "apiInterfaces",
+     "label": "API/Interfaces",
+     "type": "textarea",
+     "group": "Detailed Design",
+     "hint": "Detailed specifications for APIs, including endpoints, parameters, and responses. Protocols and formats (e.g., REST, JSON, XML)."
+    },
+    {
+     "key": "workflowsDiagrams",
+     "label": "Workflows/Diagrams",
+     "type": "textarea",
+     "group": "Detailed Design",
+     "hint": "Detailed workflows, DFD Dataflow diagrams, or process flows, including sequence/system diagrams."
+    },
+    {
+     "key": "integrationPoints",
+     "label": "Integration Points",
+     "type": "textarea",
+     "group": "Integration details",
+     "hint": "Detailed specifications for how the system integrates with other systems or services."
+    },
+    {
+     "key": "communicationsAndProtocols",
+     "label": "Communications and Protocols",
+     "type": "textarea",
+     "group": "Integration details",
+     "hint": "Specific protocols used for communication (e.g., HTTP, FTP, MQTT)."
+    },
+    {
+     "key": "errorHandling",
+     "label": "Error Handling",
+     "type": "textarea",
+     "group": "Integration details",
+     "hint": "How errors will be handled during integration."
+    },
+    {
+     "key": "environmentSetup",
+     "label": "Environment Setup",
+     "type": "textarea",
+     "group": "Configuration Details",
+     "hint": "Detailed instructions for setting up development, testing, and production environments."
+    },
+    {
+     "key": "configurationFiles",
+     "label": "Configuration Files",
+     "type": "textarea",
+     "group": "Configuration Details",
+     "hint": "Specific configuration parameters and file structures."
+    },
+    {
+     "key": "authentication",
+     "label": "Authentication",
+     "type": "textarea",
+     "group": "Security Design",
+     "hint": "Detailed authentication mechanisms (e.g., OAuth, JWT, LDAP)."
+    },
+    {
+     "key": "authorization",
+     "label": "Authorization",
+     "type": "textarea",
+     "group": "Security Design",
+     "hint": "Role-based access control (RBAC) or other authorization mechanisms."
+    },
+    {
+     "key": "encryption",
+     "label": "Encryption",
+     "type": "textarea",
+     "group": "Security Design",
+     "hint": "Encryption algorithms and strategies for securing data."
+    },
+    {
+     "key": "performance",
+     "label": "Performance",
+     "type": "textarea",
+     "group": "Non-Functional Requirements",
+     "hint": "Detailed performance benchmarks and testing criteria."
+    },
+    {
+     "key": "scalability",
+     "label": "Scalability",
+     "type": "textarea",
+     "group": "Non-Functional Requirements",
+     "hint": "Detailed scalability strategies."
+    },
+    {
+     "key": "faultTolerance",
+     "label": "Fault tolerance",
+     "type": "textarea",
+     "group": "Non-Functional Requirements",
+     "hint": "Mechanisms for ensuring fault tolerance and recovery."
+    },
+    {
+     "key": "monitoring",
+     "label": "Monitoring",
+     "type": "textarea",
+     "group": "Non-Functional Requirements",
+     "hint": "Protocols used and systems specific monitoring points e.g. http get from logic monitor Microsoft sentinel sys log looking for log entries with error. Be very specific."
+    },
+    {
+     "key": "appendices",
+     "label": "Appendices",
+     "type": "textarea",
+     "group": "Appendices",
+     "hint": "Additional diagrams References supporting information"
+    }
+   ],
+   "ops": [
+    {
+     "op": "replace",
+     "p": 0,
+     "find": "{Solution}",
+     "key": "subject",
+     "expect": "Low-Level Design (LLD) Document {Solution}"
+    },
+    {
+     "op": "after",
+     "p": 2,
+     "label": "Version:",
+     "key": "version",
+     "expect": "Version: {Number}"
+    },
+    {
+     "op": "after",
+     "p": 3,
+     "label": "Author(s):",
+     "key": "author",
+     "expect": "Author(s): {Names of Author(s)}"
+    },
+    {
+     "op": "after",
+     "p": 4,
+     "label": "Solution Owner(s):",
+     "key": "owner",
+     "expect": "Solution Owner(s): {Name(s) and positions of the Solution/Application Owners should be Director Manager or Supervisor}"
+    },
+    {
+     "op": "after",
+     "p": 5,
+     "label": "Hight Level Design document:",
+     "key": "hldLink",
+     "expect": "Hight Level Design document: {Link to the HLD used to generate this LLD}"
+    },
+    {
+     "op": "after",
+     "p": 6,
+     "label": "Date:",
+     "key": "date",
+     "expect": "Date: {Date of creation or update}"
+    },
+    {
+     "op": "rows",
+     "t": 0,
+     "start": 1,
+     "key": "owners",
+     "cols": [
+      "name",
+      "title",
+      "date"
+     ],
+     "expect": [
+      "Owner",
+      "Position",
+      "Date"
+     ],
+     "max": 4
+    },
+    {
+     "op": "rows",
+     "t": 1,
+     "start": 1,
+     "key": "changelog",
+     "cols": [
+      "desc",
+      "requestor",
+      "date",
+      "decision",
+      "ddate",
+      "comments"
+     ],
+     "expect": [
+      "Description of Change",
+      "Requestor",
+      "Date Revised",
+      "Decision",
+      "Decision Date",
+      "Comments"
+     ],
+     "max": 5
+    },
+    {
+     "op": "para",
+     "p": 14,
+     "key": "purpose",
+     "also": [],
+     "expect": "{Explain the purpose of the document and what it aims to achieve.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 16,
+     "key": "scope",
+     "also": [],
+     "expect": "{Define the scope of the system or solution being designed.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 18,
+     "key": "audience",
+     "also": [],
+     "expect": "{Specify the intended audience for the document.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 21,
+     "key": "moduleComponentDesign",
+     "also": [
+      22,
+      23
+     ],
+     "expect": "{Detailed description of each module/component.",
+     "alsoExpect": [
+      "Input, output, and processing details.",
+      "Specific algorithms or logic to be implemented.}"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 25,
+     "key": "dataStructures",
+     "also": [
+      26
+     ],
+     "expect": "{Detailed data models, schemas, or database design.",
+     "alsoExpect": [
+      "ER diagrams, table structures, and relationships.}"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 28,
+     "key": "apiInterfaces",
+     "also": [
+      29
+     ],
+     "expect": "{Detailed specifications for APIs, including endpoints, parameters, and responses.",
+     "alsoExpect": [
+      "Protocols and formats (e.g., REST, JSON, XML).}"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 31,
+     "key": "workflowsDiagrams",
+     "also": [],
+     "expect": "{Detailed workflows, DFD Dataflow diagrams, or process flows, including sequence/system diagrams.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 34,
+     "key": "integrationPoints",
+     "also": [],
+     "expect": "{Detailed specifications for how the system integrates with other systems or services.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 36,
+     "key": "communicationsAndProtocols",
+     "also": [],
+     "expect": "{Specific protocols used for communication (e.g., HTTP, FTP, MQTT).}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 38,
+     "key": "errorHandling",
+     "also": [],
+     "expect": "{How errors will be handled during integration.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 41,
+     "key": "environmentSetup",
+     "also": [],
+     "expect": "{Detailed instructions for setting up development, testing, and production environments.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 43,
+     "key": "configurationFiles",
+     "also": [],
+     "expect": "{Specific configuration parameters and file structures.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 46,
+     "key": "authentication",
+     "also": [],
+     "expect": "{Detailed authentication mechanisms (e.g., OAuth, JWT, LDAP).}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 48,
+     "key": "authorization",
+     "also": [],
+     "expect": "{Role-based access control (RBAC) or other authorization mechanisms.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 50,
+     "key": "encryption",
+     "also": [],
+     "expect": "{Encryption algorithms and strategies for securing data.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 53,
+     "key": "performance",
+     "also": [],
+     "expect": "{Detailed performance benchmarks and testing criteria.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 55,
+     "key": "scalability",
+     "also": [],
+     "expect": "{Detailed scalability strategies.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 57,
+     "key": "faultTolerance",
+     "also": [],
+     "expect": "{Mechanisms for ensuring fault tolerance and recovery.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 59,
+     "key": "monitoring",
+     "also": [],
+     "expect": "{Protocols used and systems specific monitoring points e.g. http get from logic monitor Microsoft sentinel sys log looking for log entries with error. Be very specific.}",
+     "alsoExpect": []
+    },
+    {
+     "op": "glossary",
+     "p": 64,
+     "also": [
+      65,
+      66
+     ],
+     "label": null,
+     "expect": "{Definitions of terms",
+     "alsoExpect": [
+      "Acronyms",
+      "jargon used in the document.}"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 68,
+     "key": "appendices",
+     "also": [
+      69,
+      70
+     ],
+     "expect": "{Additional diagrams",
+     "alsoExpect": [
+      "References",
+      "supporting information}"
+     ]
+    }
+   ],
+   "glossary": true
+  },
+  {
+   "id": "mop",
+   "file": "Method of Procedure (MOP)_Template.docx",
+   "docx": "mop.docx",
+   "title": "Method of Procedure (MOP)",
+   "category": "Operations",
+   "summary": "Step-by-step instructions for a change or task, with roles, validation, rollback and approvals.",
+   "fields": [
+    {
+     "key": "reference",
+     "label": "Reference (ticket or document number)",
+     "type": "text",
+     "group": "Document details",
+     "hint": "e.g. CHG0012345"
+    },
+    {
+     "key": "application",
+     "label": "Application or request",
+     "type": "text",
+     "group": "Document details",
+     "hint": "The application or request this covers"
+    },
+    {
+     "key": "subject",
+     "label": "Procedure name",
+     "type": "text",
+     "group": "Document details",
+     "hint": "The name of the procedure"
+    },
+    {
+     "key": "purpose",
+     "label": "Purpose",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "This is a brief description on how applications should"
+    },
+    {
+     "key": "scope",
+     "label": "Scope",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "system administration and maintenance activities, such as managing backups and user accounts software and hardware configuration changes, such as patches, updates and upgrades the acquisition, support and disposal of assets the labelling, registering and mustering of assets"
+    },
+    {
+     "key": "preRequisites",
+     "label": "Pre-Requisites",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "List required approvals, access, tools, or conditions before execution."
+    },
+    {
+     "key": "rolesAndResponsibilities",
+     "label": "Roles and Responsibilities",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Specify who will perform, validate, and approve each step."
+    },
+    {
+     "key": "stepByStepProcedure",
+     "label": "Step-by-Step Procedure",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "This is the main text of the MOP. It must detail the procedure for the task to be performed.  There should be sufficient detail, clearly expressed, to enable a trained person to perform the procedure without supervision. There should also be sufficient detail to enable a trained person to use the document to train others to perform the task. Use graphical flow diagrams to assist in explaining complex procedures if necessary"
+    },
+    {
+     "key": "validationAndTesting",
+     "label": "Validation and Testing",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Describe how success will be verified."
+    },
+    {
+     "key": "rollbackPlan",
+     "label": "Rollback Plan",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Outline steps to revert changes if needed."
+    },
+    {
+     "key": "risksAndMitigations",
+     "label": "Risks and Mitigations",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Identify potential risks and how they’ll be addressed."
+    },
+    {
+     "key": "responsibleOrganization",
+     "label": "Responsible Organization",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Include the key Roles and Responsibilities of the system. E.g. information/system owner,  custodian, resolver group, security officer etc."
+    },
+    {
+     "key": "documentReferences",
+     "label": "Document References",
+     "type": "textarea",
+     "group": "Document administration",
+     "hint": "List of documents referred to in the development of this document e.g. Vendor Page or PDF"
+    },
+    {
+     "key": "steps",
+     "label": "Steps",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "One step per line. Each line becomes “Step 1”, “Step 2”, and so on."
+    },
+    {
+     "key": "approvers",
+     "label": "Approvals",
+     "type": "rows",
+     "group": "Sign-off",
+     "cols": [
+      {
+       "key": "name",
+       "label": "Name"
+      },
+      {
+       "key": "title",
+       "label": "Title"
+      },
+      {
+       "key": "date",
+       "label": "Date"
+      }
+     ],
+     "heads": [
+      "Name",
+      "Title",
+      "Date"
+     ]
+    }
+   ],
+   "ops": [
+    {
+     "op": "replace",
+     "t": 0,
+     "r": 0,
+     "c": 0,
+     "find": "[Template <ITSM Ticket>]",
+     "key": "reference",
+     "expect": "Method of Procedure (MOP) [Template <ITSM Ticket>]\n<Application – Request>"
+    },
+    {
+     "op": "replace",
+     "t": 0,
+     "r": 0,
+     "c": 0,
+     "find": "<Application – Request>",
+     "key": "application",
+     "expect": "Method of Procedure (MOP) [Template <ITSM Ticket>]\n<Application – Request>"
+    },
+    {
+     "op": "para",
+     "p": 1,
+     "key": "subject",
+     "also": [],
+     "expect": "[Enter the name of the procedure]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 3,
+     "key": "purpose",
+     "also": [],
+     "expect": "[This is a brief description on how applications should]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 5,
+     "key": "scope",
+     "also": [
+      6,
+      7,
+      8
+     ],
+     "expect": "[system administration and maintenance activities, such as managing backups and user accounts",
+     "alsoExpect": [
+      "software and hardware configuration changes, such as patches, updates and upgrades",
+      "the acquisition, support and disposal of assets",
+      "the labelling, registering and mustering of assets]"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 12,
+     "key": "preRequisites",
+     "also": [],
+     "expect": "[List required approvals, access, tools, or conditions before execution.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 15,
+     "key": "rolesAndResponsibilities",
+     "also": [],
+     "expect": "[Specify who will perform, validate, and approve each step.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 18,
+     "key": "stepByStepProcedure",
+     "also": [
+      19,
+      20
+     ],
+     "expect": "[This is the main text of the MOP. It must detail the procedure for the task to be performed. ",
+     "alsoExpect": [
+      "There should be sufficient detail, clearly expressed, to enable a trained person to perform the procedure without supervision.",
+      "There should also be sufficient detail to enable a trained person to use the document to train others to perform the task. Use graphical flow diagrams to assist in explaining complex procedures if necessary]  "
+     ]
+    },
+    {
+     "op": "para",
+     "p": 29,
+     "key": "validationAndTesting",
+     "also": [],
+     "expect": "[Describe how success will be verified.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 32,
+     "key": "rollbackPlan",
+     "also": [],
+     "expect": "[Outline steps to revert changes if needed.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 35,
+     "key": "risksAndMitigations",
+     "also": [],
+     "expect": "[Identify potential risks and how they’ll be addressed.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 37,
+     "key": "responsibleOrganization",
+     "also": [],
+     "expect": "[Include the key Roles and Responsibilities of the system. E.g. information/system owner,  custodian, resolver group, security officer etc.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 42,
+     "key": "documentReferences",
+     "also": [],
+     "expect": "[List of documents referred to in the development of this document e.g. Vendor Page or PDF]",
+     "alsoExpect": []
+    },
+    {
+     "op": "glossary",
+     "p": 44,
+     "also": [],
+     "label": null,
+     "expect": "[Glossary]",
+     "alsoExpect": []
+    },
+    {
+     "op": "steps",
+     "from": 21,
+     "to": 26,
+     "key": "steps",
+     "expect": "Step 1",
+     "toExpect": "{Pic of the thing to do}"
+    },
+    {
+     "op": "rows",
+     "t": 1,
+     "start": 1,
+     "key": "approvers",
+     "cols": [
+      "name",
+      "title",
+      "date"
+     ],
+     "expect": [
+      "Name",
+      "Title",
+      "Date"
+     ],
+     "max": 5
+    }
+   ],
+   "glossary": true
+  },
+  {
+   "id": "sop",
+   "file": "Standard Operating Procedure (SOP) Template.docx",
+   "docx": "sop.docx",
+   "title": "Standard Operating Procedure (SOP)",
+   "category": "Operations",
+   "summary": "A standard, repeatable procedure with roles, validation, rollback, approvals and document control.",
+   "fields": [
+    {
+     "key": "reference",
+     "label": "Reference (ticket or document number)",
+     "type": "text",
+     "group": "Document details",
+     "hint": "e.g. SOP-014"
+    },
+    {
+     "key": "application",
+     "label": "Application or request",
+     "type": "text",
+     "group": "Document details",
+     "hint": "The application or request this covers"
+    },
+    {
+     "key": "subject",
+     "label": "Procedure name",
+     "type": "text",
+     "group": "Document details",
+     "hint": "The name of the procedure"
+    },
+    {
+     "key": "purpose",
+     "label": "Purpose",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "This is a brief description on how applications should"
+    },
+    {
+     "key": "scope",
+     "label": "Scope",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "system administration and maintenance activities, such as managing backups and user accounts software and hardware configuration changes, such as patches, updates and upgrades the acquisition, support and disposal of assets the labelling, registering and mustering of assets"
+    },
+    {
+     "key": "preRequisites",
+     "label": "Pre-Requisites",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "List required approvals, access, tools, or conditions before execution."
+    },
+    {
+     "key": "rolesAndResponsibilities",
+     "label": "Roles and Responsibilities",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Specify who will perform, validate, and approve each step."
+    },
+    {
+     "key": "stepByStepProcedure",
+     "label": "Step-by-Step Procedure",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "This is the main text of the SOP. It must detail the procedure for the task to be performed.  There should be sufficient detail, clearly expressed, to enable a trained person to perform the procedure without supervision. There should also be sufficient detail to enable a trained person to use the document to train others to perform the task. Use graphical flow diagrams to assist in explaining complex procedures if necessary"
+    },
+    {
+     "key": "validationAndTesting",
+     "label": "Validation and Testing",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Describe how success will be verified."
+    },
+    {
+     "key": "rollbackPlan",
+     "label": "Rollback Plan",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Outline steps to revert changes if needed."
+    },
+    {
+     "key": "responsibleOrganization",
+     "label": "Responsible Organization",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "Include the key Roles and Responsibilities of the system. E.g. information/system owner, custodian, resolver group, security officer etc."
+    },
+    {
+     "key": "documentLocation",
+     "label": "Document Location",
+     "type": "textarea",
+     "group": "Document administration",
+     "hint": "Location where the document is stored"
+    },
+    {
+     "key": "documentReferences",
+     "label": "Document References",
+     "type": "textarea",
+     "group": "Document administration",
+     "hint": "List of documents referred to in the development of this document e.g. MOP_Change#.doc"
+    },
+    {
+     "key": "amendmentHistory",
+     "label": "Amendment History",
+     "type": "textarea",
+     "group": "Document administration",
+     "hint": "This document has the following amendment history"
+    },
+    {
+     "key": "steps",
+     "label": "Steps",
+     "type": "textarea",
+     "group": "Procedure",
+     "hint": "One step per line. Each line becomes “Step 1”, “Step 2”, and so on."
+    },
+    {
+     "key": "approvers",
+     "label": "Approvals",
+     "type": "rows",
+     "group": "Sign-off",
+     "cols": [
+      {
+       "key": "name",
+       "label": "Name"
+      },
+      {
+       "key": "title",
+       "label": "Title"
+      },
+      {
+       "key": "date",
+       "label": "Date"
+      }
+     ],
+     "heads": [
+      "Name",
+      "Title",
+      "Date"
+     ]
+    }
+   ],
+   "ops": [
+    {
+     "op": "replace",
+     "t": 0,
+     "r": 0,
+     "c": 0,
+     "find": "[Template]",
+     "key": "reference",
+     "expect": "Standard Operating Procedure (SOP) [Template]\n<Application – Request>"
+    },
+    {
+     "op": "replace",
+     "t": 0,
+     "r": 0,
+     "c": 0,
+     "find": "<Application – Request>",
+     "key": "application",
+     "expect": "Standard Operating Procedure (SOP) [Template]\n<Application – Request>"
+    },
+    {
+     "op": "para",
+     "p": 1,
+     "key": "subject",
+     "also": [],
+     "expect": "[Enter the name of the procedure]  ",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 3,
+     "key": "purpose",
+     "also": [],
+     "expect": "[This is a brief description on how applications should]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 5,
+     "key": "scope",
+     "also": [
+      6,
+      7,
+      8
+     ],
+     "expect": "[system administration and maintenance activities, such as managing backups and user accounts",
+     "alsoExpect": [
+      "software and hardware configuration changes, such as patches, updates and upgrades",
+      "the acquisition, support and disposal of assets",
+      "the labelling, registering and mustering of assets]"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 12,
+     "key": "preRequisites",
+     "also": [],
+     "expect": "[List required approvals, access, tools, or conditions before execution.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 15,
+     "key": "rolesAndResponsibilities",
+     "also": [],
+     "expect": "[Specify who will perform, validate, and approve each step.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 18,
+     "key": "stepByStepProcedure",
+     "also": [
+      19,
+      20
+     ],
+     "expect": "[This is the main text of the SOP. It must detail the procedure for the task to be performed. ",
+     "alsoExpect": [
+      "There should be sufficient detail, clearly expressed, to enable a trained person to perform the procedure without supervision.",
+      "There should also be sufficient detail to enable a trained person to use the document to train others to perform the task. Use graphical flow diagrams to assist in explaining complex procedures if necessary]  "
+     ]
+    },
+    {
+     "op": "para",
+     "p": 29,
+     "key": "validationAndTesting",
+     "also": [],
+     "expect": "[Describe how success will be verified.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 32,
+     "key": "rollbackPlan",
+     "also": [],
+     "expect": "[Outline steps to revert changes if needed.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 34,
+     "key": "responsibleOrganization",
+     "also": [],
+     "expect": "[Include the key Roles and Responsibilities of the system. E.g. information/system owner, custodian, resolver group, security officer etc.]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 40,
+     "key": "documentLocation",
+     "also": [],
+     "expect": "[Location where the document is stored]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 42,
+     "key": "documentReferences",
+     "also": [],
+     "expect": "[List of documents referred to in the development of this document e.g. MOP_Change#.doc]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 44,
+     "key": "amendmentHistory",
+     "also": [],
+     "expect": "[This document has the following amendment history]",
+     "alsoExpect": []
+    },
+    {
+     "op": "glossary",
+     "p": 46,
+     "also": [],
+     "label": null,
+     "expect": "[Glossary]",
+     "alsoExpect": []
+    },
+    {
+     "op": "steps",
+     "from": 21,
+     "to": 26,
+     "key": "steps",
+     "expect": "Step 1",
+     "toExpect": "{Pic of the thing to do}"
+    },
+    {
+     "op": "rows",
+     "t": 1,
+     "start": 1,
+     "key": "approvers",
+     "cols": [
+      "name",
+      "title",
+      "date"
+     ],
+     "expect": [
+      "Name",
+      "Title",
+      "Date"
+     ],
+     "max": 5
+    }
+   ],
+   "glossary": true
+  },
+  {
+   "id": "risk-statement",
+   "file": "Risk_Statement_YYYY-XXXX_Template.docx",
+   "docx": "risk-statement.docx",
+   "title": "Cybersecurity Risk Statement",
+   "category": "Risk",
+   "summary": "One risk, written as a clear statement, with its assessment, controls, mitigation and review plan.",
+   "fields": [
+    {
+     "key": "riskId",
+     "label": "Risk ID",
+     "type": "text",
+     "group": "Risk identification",
+     "hint": "YYYY-XXXX, e.g. 2026-0007"
+    },
+    {
+     "key": "date",
+     "label": "Date identified",
+     "type": "date",
+     "group": "Risk identification",
+     "common": true
+    },
+    {
+     "key": "owner",
+     "label": "Risk owner",
+     "type": "text",
+     "group": "Risk identification",
+     "hint": "Name / Department",
+     "common": true
+    },
+    {
+     "key": "riskCategory",
+     "label": "Category",
+     "type": "select",
+     "group": "Risk identification",
+     "options": [
+      "Cybersecurity",
+      "Compliance",
+      "Operational",
+      "Strategic"
+     ]
+    },
+    {
+     "key": "riskCategory2",
+     "label": "Second category (optional)",
+     "type": "select",
+     "group": "Risk identification",
+     "options": [
+      "Cybersecurity",
+      "Compliance",
+      "Operational",
+      "Strategic"
+     ]
+    },
+    {
+     "key": "threat",
+     "label": "Threat actor or event",
+     "type": "text",
+     "group": "Risk statement",
+     "hint": "threat actor or event"
+    },
+    {
+     "key": "action",
+     "label": "Action or impact",
+     "type": "text",
+     "group": "Risk statement",
+     "hint": "action or impact"
+    },
+    {
+     "key": "vulnerabilityCondition",
+     "label": "Vulnerability or condition",
+     "type": "text",
+     "group": "Risk statement",
+     "hint": "vulnerability or condition"
+    },
+    {
+     "key": "consequence",
+     "label": "Consequence or business impact",
+     "type": "text",
+     "group": "Risk statement",
+     "hint": "consequence or business impact"
+    },
+    {
+     "key": "source",
+     "label": "Source",
+     "type": "textarea",
+     "group": "Risk description and assessment",
+     "hint": "Describe the origin of the risk (e.g., internal, external, accidental, malicious)."
+    },
+    {
+     "key": "vulnerability",
+     "label": "Vulnerability",
+     "type": "textarea",
+     "group": "Risk description and assessment",
+     "hint": "Description of security weakness"
+    },
+    {
+     "key": "assets",
+     "label": "Assets at Risk",
+     "type": "textarea",
+     "group": "Risk description and assessment",
+     "hint": "Systems that could be impacted"
+    },
+    {
+     "key": "impact",
+     "label": "Potential Impact",
+     "type": "textarea",
+     "group": "Risk description and assessment",
+     "hint": "Describe the potential consequences if the risk materializes."
+    },
+    {
+     "key": "likelihood",
+     "label": "Likelihood",
+     "type": "select",
+     "group": "Risk description and assessment",
+     "options": [
+      "High",
+      "Medium",
+      "Low"
+     ]
+    },
+    {
+     "key": "initialRisk",
+     "label": "Initial risk level",
+     "type": "select",
+     "group": "Risk description and assessment",
+     "options": [
+      "Low",
+      "Medium",
+      "High"
+     ]
+    },
+    {
+     "key": "controls",
+     "label": "Controls in place",
+     "type": "textarea",
+     "group": "Risk description and assessment",
+     "hint": "List existing controls that mitigate the risk."
+    },
+    {
+     "key": "residualRisk",
+     "label": "Residual risk",
+     "type": "textarea",
+     "group": "Risk description and assessment",
+     "hint": "Risk remains after controls are applied."
+    },
+    {
+     "key": "residualLikelihood",
+     "label": "Likelihood (after controls)",
+     "type": "select",
+     "group": "Risk description and assessment",
+     "options": [
+      "High",
+      "Medium",
+      "Low"
+     ]
+    },
+    {
+     "key": "mitigation",
+     "label": "Mitigation strategies",
+     "type": "textarea",
+     "group": "Mitigation and review",
+     "hint": "Describe the actions planned or taken to reduce the risk to an acceptable level."
+    },
+    {
+     "key": "reviewFrequency",
+     "label": "Review frequency",
+     "type": "select",
+     "group": "Mitigation and review",
+     "options": [
+      "Monthly",
+      "Quarterly",
+      "Twice a year",
+      "Yearly"
+     ]
+    },
+    {
+     "key": "nextReview",
+     "label": "Next review date",
+     "type": "date",
+     "group": "Mitigation and review"
+    },
+    {
+     "key": "responsible",
+     "label": "Responsible party",
+     "type": "text",
+     "group": "Mitigation and review",
+     "hint": "Name / Role responsible for monitoring this risk."
+    }
+   ],
+   "ops": [
+    {
+     "op": "strip",
+     "p": 0,
+     "find": " Template",
+     "expect": "Cybersecurity Risk Statement Template"
+    },
+    {
+     "op": "after",
+     "p": 2,
+     "label": "Risk ID:",
+     "key": "riskId",
+     "expect": "Risk ID: YYYY-XXXX"
+    },
+    {
+     "op": "sdt",
+     "p": 3,
+     "i": 0,
+     "key": "date",
+     "date": "M/d/yyyy",
+     "expect": "Date Identified: "
+    },
+    {
+     "op": "after",
+     "p": 4,
+     "label": "Risk Owner:",
+     "key": "owner",
+     "expect": "Risk Owner: Name / Department"
+    },
+    {
+     "op": "sdt",
+     "p": 5,
+     "i": 0,
+     "key": "riskCategory",
+     "expect": "Category:   /  "
+    },
+    {
+     "op": "sdt",
+     "p": 5,
+     "i": 1,
+     "key": "riskCategory2",
+     "expect": "Category:   /  "
+    },
+    {
+     "op": "replace",
+     "p": 7,
+     "find": "[threat actor or event]",
+     "key": "threat",
+     "expect": "There is a risk that [threat actor or event] may [action or impact] due to [vulnerability or condition], resulting in [consequence or business impact]."
+    },
+    {
+     "op": "replace",
+     "p": 7,
+     "find": "[action or impact]",
+     "key": "action",
+     "expect": "There is a risk that [threat actor or event] may [action or impact] due to [vulnerability or condition], resulting in [consequence or business impact]."
+    },
+    {
+     "op": "replace",
+     "p": 7,
+     "find": "[vulnerability or condition]",
+     "key": "vulnerabilityCondition",
+     "expect": "There is a risk that [threat actor or event] may [action or impact] due to [vulnerability or condition], resulting in [consequence or business impact]."
+    },
+    {
+     "op": "replace",
+     "p": 7,
+     "find": "[consequence or business impact]",
+     "key": "consequence",
+     "expect": "There is a risk that [threat actor or event] may [action or impact] due to [vulnerability or condition], resulting in [consequence or business impact]."
+    },
+    {
+     "op": "after",
+     "p": 9,
+     "label": "Source:",
+     "key": "source",
+     "expect": "Source: Describe the origin of the risk (e.g., internal, external, accidental, malicious)."
+    },
+    {
+     "op": "after",
+     "p": 10,
+     "label": "Vulnerability:",
+     "key": "vulnerability",
+     "expect": "Vulnerability: Description of security weakness"
+    },
+    {
+     "op": "after",
+     "p": 11,
+     "label": "Asset(‘s) at Risk:",
+     "key": "assets",
+     "expect": "Asset(‘s) at Risk: Systems that could be impacted"
+    },
+    {
+     "op": "after",
+     "p": 12,
+     "label": "Potential Impact:",
+     "key": "impact",
+     "expect": "Potential Impact: Describe the potential consequences if the risk materializes."
+    },
+    {
+     "op": "sdt",
+     "p": 13,
+     "i": 0,
+     "key": "likelihood",
+     "expect": "Likelihood: "
+    },
+    {
+     "op": "sdt",
+     "p": 15,
+     "i": 0,
+     "key": "initialRisk",
+     "expect": "Initial Risk Level: "
+    },
+    {
+     "op": "after",
+     "p": 16,
+     "label": "Controls in Place:",
+     "key": "controls",
+     "expect": "Controls in Place: List existing controls that mitigate the risk."
+    },
+    {
+     "op": "after",
+     "p": 17,
+     "label": "Residual Risk:",
+     "key": "residualRisk",
+     "expect": "Residual Risk: Risk remains after controls are applied."
+    },
+    {
+     "op": "sdt",
+     "p": 18,
+     "i": 0,
+     "key": "residualLikelihood",
+     "expect": "Likelihood: "
+    },
+    {
+     "op": "para",
+     "p": 20,
+     "key": "mitigation",
+     "also": [],
+     "expect": "Describe the actions planned or taken to reduce the risk to an acceptable level.",
+     "alsoExpect": []
+    },
+    {
+     "op": "sdt",
+     "p": 22,
+     "i": 0,
+     "key": "reviewFrequency",
+     "expect": "Review Frequency: "
+    },
+    {
+     "op": "sdt",
+     "p": 23,
+     "i": 0,
+     "key": "nextReview",
+     "date": "M/d/yyyy",
+     "expect": "Next Review Date: "
+    },
+    {
+     "op": "after",
+     "p": 24,
+     "label": "Responsible Party:",
+     "key": "responsible",
+     "expect": "Responsible Party: Name / Role responsible for monitoring this risk."
+    }
+   ]
+  },
+  {
+   "id": "firewall-audit",
+   "file": "Firewall_Audit_Template.docx",
+   "docx": "firewall-audit.docx",
+   "title": "Firewall Audit",
+   "category": "Audit",
+   "summary": "A firewall audit report: scope, method, policy and configuration review, vulnerabilities, findings and recommendations.",
+   "fields": [
+    {
+     "key": "purposeOfTheAudit",
+     "label": "Purpose of the Audit",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Briefly describe the objectives of the firewall audit."
+    },
+    {
+     "key": "scopeOfTheAudit",
+     "label": "Scope of the Audit",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Define the boundaries of the audit, including the firewalls, networks, and devices to be audited."
+    },
+    {
+     "key": "audience",
+     "label": "Audience",
+     "type": "textarea",
+     "group": "Introduction",
+     "hint": "Identify who the audit report is intended for, such as IT management, security teams, or compliance officers."
+    },
+    {
+     "key": "firewallTypes",
+     "label": "Firewall Types",
+     "type": "textarea",
+     "group": "Audit Scope (Detailed)",
+     "hint": "Specify the types of firewalls included in the audit (e.g., network firewalls, host-based firewalls)."
+    },
+    {
+     "key": "networkSegments",
+     "label": "Network Segments",
+     "type": "textarea",
+     "group": "Audit Scope (Detailed)",
+     "hint": "List the network segments or environments covered, such as internal, DMZ, and external networks."
+    },
+    {
+     "key": "devicesAndServices",
+     "label": "Devices and Services",
+     "type": "textarea",
+     "group": "Audit Scope (Detailed)",
+     "hint": "Identify the devices (e.g., routers, switches) and services (e.g., VPN, proxy) under review."
+    },
+    {
+     "key": "securityPoliciesAndStandards",
+     "label": "Security Policies and Standards",
+     "type": "textarea",
+     "group": "Audit Scope (Detailed)",
+     "hint": "Reference the security policies, standards, and regulations guiding the audit (e.g., ISO 27001, NIST, PCI DSS)."
+    },
+    {
+     "key": "dataCollection",
+     "label": "Data Collection",
+     "type": "textarea",
+     "group": "Audit Methodology",
+     "hint": "Outline the methods for collecting firewall configurations, logs, and other relevant data."
+    },
+    {
+     "key": "toolsAndTechniques",
+     "label": "Tools and Techniques",
+     "type": "textarea",
+     "group": "Audit Methodology",
+     "hint": "List the tools (e.g., firewall management software, vulnerability scanners) and techniques (e.g., manual inspection, automated scans) to be used."
+    },
+    {
+     "key": "analysisFramework",
+     "label": "Analysis Framework",
+     "type": "textarea",
+     "group": "Audit Methodology",
+     "hint": "Describe the framework or criteria for analyzing firewall configurations and security controls."
+    },
+    {
+     "key": "policyCompliance",
+     "label": "Policy Compliance",
+     "type": "textarea",
+     "group": "Compliance and Policy Review",
+     "hint": "Assess the alignment of firewall configurations with internal security policies and external regulations."
+    },
+    {
+     "key": "accessControlListsAcls",
+     "label": "Access Control Lists (ACLs)",
+     "type": "textarea",
+     "group": "Compliance and Policy Review",
+     "hint": "Review the ACLs for proper implementation, including unnecessary, overly permissive, or outdated rules."
+    },
+    {
+     "key": "changeManagement",
+     "label": "Change Management",
+     "type": "textarea",
+     "group": "Compliance and Policy Review",
+     "hint": "Evaluate the processes for managing changes to firewall configurations and rules."
+    },
+    {
+     "key": "defaultSettings",
+     "label": "Default Settings",
+     "type": "textarea",
+     "group": "Security Configuration Review",
+     "hint": "Check for any unchanged default usernames, passwords, and configurations."
+    },
+    {
+     "key": "softwareAndFirmware",
+     "label": "Software and Firmware",
+     "type": "textarea",
+     "group": "Security Configuration Review",
+     "hint": "Verify that the firewall is running up-to-date software/firmware with all necessary security patches applied."
+    },
+    {
+     "key": "encryptionAndAuthentication",
+     "label": "Encryption and Authentication",
+     "type": "textarea",
+     "group": "Security Configuration Review",
+     "hint": "Assess the encryption standards and authentication mechanisms in use."
+    },
+    {
+     "key": "knownVulnerabilities",
+     "label": "Known Vulnerabilities",
+     "type": "textarea",
+     "group": "Vulnerability Assessment",
+     "hint": "Identify known vulnerabilities affecting the firewall software/hardware."
+    },
+    {
+     "key": "penetrationTesting",
+     "label": "Penetration Testing",
+     "type": "textarea",
+     "group": "Vulnerability Assessment",
+     "hint": "Optionally, conduct or review results from penetration testing focused on the firewall and adjacent network components."
+    },
+    {
+     "key": "findingsSummary",
+     "label": "Findings Summary",
+     "type": "textarea",
+     "group": "Audit Findings and Recommendations",
+     "hint": "Present a summary of the audit findings, categorizing them by severity (e.g., critical, high, medium, low)."
+    },
+    {
+     "key": "recommendations",
+     "label": "Recommendations",
+     "type": "textarea",
+     "group": "Audit Findings and Recommendations",
+     "hint": "Provide actionable recommendations for each finding, prioritizing based on risk and impact."
+    },
+    {
+     "key": "overallAssessment",
+     "label": "Overall Assessment",
+     "type": "textarea",
+     "group": "Conclusion",
+     "hint": "Offer an overall assessment of the firewall's security posture based on the audit findings."
+    },
+    {
+     "key": "nextSteps",
+     "label": "Next Steps",
+     "type": "textarea",
+     "group": "Conclusion",
+     "hint": "Suggest next steps, including a timeline for addressing the findings and recommendations for future audits."
+    },
+    {
+     "key": "auditTrails",
+     "label": "Audit Trails",
+     "type": "textarea",
+     "group": "Appendices",
+     "hint": "Include detailed logs or records of the audit process, tools used, and data analyzed."
+    }
+   ],
+   "ops": [
+    {
+     "op": "strip",
+     "p": 0,
+     "find": " Template",
+     "expect": "Firewall Audit Template"
+    },
+    {
+     "op": "after",
+     "p": 2,
+     "label": "Purpose of the Audit:",
+     "key": "purposeOfTheAudit",
+     "expect": "Purpose of the Audit: Briefly describe the objectives of the firewall audit."
+    },
+    {
+     "op": "after",
+     "p": 3,
+     "label": "Scope of the Audit:",
+     "key": "scopeOfTheAudit",
+     "expect": "Scope of the Audit: Define the boundaries of the audit, including the firewalls, networks, and devices to be audited."
+    },
+    {
+     "op": "after",
+     "p": 4,
+     "label": "Audience:",
+     "key": "audience",
+     "expect": "Audience: Identify who the audit report is intended for, such as IT management, security teams, or compliance officers."
+    },
+    {
+     "op": "after",
+     "p": 6,
+     "label": "Firewall Types:",
+     "key": "firewallTypes",
+     "expect": "Firewall Types: Specify the types of firewalls included in the audit (e.g., network firewalls, host-based firewalls)."
+    },
+    {
+     "op": "after",
+     "p": 7,
+     "label": "Network Segments:",
+     "key": "networkSegments",
+     "expect": "Network Segments: List the network segments or environments covered, such as internal, DMZ, and external networks."
+    },
+    {
+     "op": "after",
+     "p": 8,
+     "label": "Devices and Services:",
+     "key": "devicesAndServices",
+     "expect": "Devices and Services: Identify the devices (e.g., routers, switches) and services (e.g., VPN, proxy) under review."
+    },
+    {
+     "op": "after",
+     "p": 9,
+     "label": "Security Policies and Standards:",
+     "key": "securityPoliciesAndStandards",
+     "expect": "Security Policies and Standards: Reference the security policies, standards, and regulations guiding the audit (e.g., ISO 27001, NIST, PCI DSS)."
+    },
+    {
+     "op": "after",
+     "p": 11,
+     "label": "Data Collection:",
+     "key": "dataCollection",
+     "expect": "Data Collection: Outline the methods for collecting firewall configurations, logs, and other relevant data."
+    },
+    {
+     "op": "after",
+     "p": 12,
+     "label": "Tools and Techniques:",
+     "key": "toolsAndTechniques",
+     "expect": "Tools and Techniques: List the tools (e.g., firewall management software, vulnerability scanners) and techniques (e.g., manual inspection, automated scans) to be used."
+    },
+    {
+     "op": "after",
+     "p": 13,
+     "label": "Analysis Framework:",
+     "key": "analysisFramework",
+     "expect": "Analysis Framework: Describe the framework or criteria for analyzing firewall configurations and security controls."
+    },
+    {
+     "op": "after",
+     "p": 15,
+     "label": "Policy Compliance:",
+     "key": "policyCompliance",
+     "expect": "Policy Compliance: Assess the alignment of firewall configurations with internal security policies and external regulations."
+    },
+    {
+     "op": "after",
+     "p": 16,
+     "label": "Access Control Lists (ACLs):",
+     "key": "accessControlListsAcls",
+     "expect": "Access Control Lists (ACLs): Review the ACLs for proper implementation, including unnecessary, overly permissive, or outdated rules."
+    },
+    {
+     "op": "after",
+     "p": 17,
+     "label": "Change Management:",
+     "key": "changeManagement",
+     "expect": "Change Management: Evaluate the processes for managing changes to firewall configurations and rules."
+    },
+    {
+     "op": "after",
+     "p": 19,
+     "label": "Default Settings:",
+     "key": "defaultSettings",
+     "expect": "Default Settings: Check for any unchanged default usernames, passwords, and configurations."
+    },
+    {
+     "op": "after",
+     "p": 20,
+     "label": "Software and Firmware:",
+     "key": "softwareAndFirmware",
+     "expect": "Software and Firmware: Verify that the firewall is running up-to-date software/firmware with all necessary security patches applied."
+    },
+    {
+     "op": "after",
+     "p": 21,
+     "label": "Encryption and Authentication:",
+     "key": "encryptionAndAuthentication",
+     "expect": "Encryption and Authentication: Assess the encryption standards and authentication mechanisms in use."
+    },
+    {
+     "op": "after",
+     "p": 23,
+     "label": "Known Vulnerabilities:",
+     "key": "knownVulnerabilities",
+     "expect": "Known Vulnerabilities: Identify known vulnerabilities affecting the firewall software/hardware."
+    },
+    {
+     "op": "after",
+     "p": 24,
+     "label": "Penetration Testing:",
+     "key": "penetrationTesting",
+     "expect": "Penetration Testing: Optionally, conduct or review results from penetration testing focused on the firewall and adjacent network components."
+    },
+    {
+     "op": "after",
+     "p": 26,
+     "label": "Findings Summary:",
+     "key": "findingsSummary",
+     "expect": "Findings Summary: Present a summary of the audit findings, categorizing them by severity (e.g., critical, high, medium, low)."
+    },
+    {
+     "op": "after",
+     "p": 27,
+     "label": "Recommendations:",
+     "key": "recommendations",
+     "expect": "Recommendations: Provide actionable recommendations for each finding, prioritizing based on risk and impact."
+    },
+    {
+     "op": "after",
+     "p": 29,
+     "label": "Overall Assessment:",
+     "key": "overallAssessment",
+     "expect": "Overall Assessment: Offer an overall assessment of the firewall's security posture based on the audit findings."
+    },
+    {
+     "op": "after",
+     "p": 30,
+     "label": "Next Steps:",
+     "key": "nextSteps",
+     "expect": "Next Steps: Suggest next steps, including a timeline for addressing the findings and recommendations for future audits."
+    },
+    {
+     "op": "glossary",
+     "p": 32,
+     "also": [],
+     "label": "Glossary:",
+     "expect": "Glossary: Define any technical terms or acronyms used in the report.",
+     "alsoExpect": []
+    },
+    {
+     "op": "after",
+     "p": 33,
+     "label": "Audit Trails:",
+     "key": "auditTrails",
+     "expect": "Audit Trails: Include detailed logs or records of the audit process, tools used, and data analyzed."
+    }
+   ],
+   "glossary": true
+  },
+  {
+   "id": "technology-roadmap",
+   "file": "Technology_Roadmap_Template.docx",
+   "docx": "technology-roadmap.docx",
+   "title": "Technology Roadmap",
+   "category": "Strategy",
+   "summary": "A roadmap for a security technology: overview, governance, policies, objectives, phases, vision, initiatives and approvals.",
+   "fields": [
+    {
+     "key": "approvers",
+     "label": "Document approvals",
+     "type": "rows",
+     "group": "Document details",
+     "cols": [
+      {
+       "key": "name",
+       "label": "Name"
+      },
+      {
+       "key": "title",
+       "label": "Title"
+      },
+      {
+       "key": "date",
+       "label": "Date"
+      }
+     ],
+     "heads": [
+      "Name",
+      "Title",
+      "Date"
+     ]
+    },
+    {
+     "key": "company",
+     "label": "Organization",
+     "type": "text",
+     "group": "Document details",
+     "hint": "Organization",
+     "common": true
+    },
+    {
+     "key": "technologyOverview",
+     "label": "Technology Overview",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "Provide an overview of the technology being implemented. This may include: - Definition and purpose of the technology - Key features and benefits - Relevance to the organization's cybersecurity strategy"
+    },
+    {
+     "key": "governanceFrameworks",
+     "label": "Governance Frameworks",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "Describe the governance frameworks that will be used to guide the implementation of the technology. This may include NIST, ISO 27001, CIS Controls, etc."
+    },
+    {
+     "key": "policies",
+     "label": "Policies",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "Outline the key policies that will be developed and implemented to support the technology. This may include policies on data protection, incident response, access control, etc."
+    },
+    {
+     "key": "strategicObjectives",
+     "label": "Strategic Objectives",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "Define the strategic objectives of implementing the technology. These should be aligned with the organization's business goals and regulatory requirements."
+    },
+    {
+     "key": "phasesForDevelopingExecutingEvaluatingAn",
+     "label": "Phases for Developing, Executing, Evaluating, and Monitoring",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "Describe the phases that will be followed to develop, execute, evaluate, and monitor the implementation of the technology. This may include: - Phase 1: Assessment and Planning - Phase 2: Implementation - Phase 3: Evaluation - Phase 4: Continuous Monitoring - Phase 5: Continuous Improvement"
+    },
+    {
+     "key": "technologyVision",
+     "label": "Technology Vision",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "Articulate the vision for implementing the technology in the organization. This should be a clear and concise statement that reflects the organization's commitment to cybersecurity."
+    },
+    {
+     "key": "initiativesAndProjects",
+     "label": "Initiatives and Projects",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "List the key initiatives and projects that will be undertaken to achieve the strategic objectives of implementing the technology. This may include: - Initiative 1: Enhancing Network Security - Initiative 2: Improving Endpoint Protection - Initiative 3: Strengthening Access Controls - Initiative 4: Conducting Regular Security Audits"
+    },
+    {
+     "key": "conclusion",
+     "label": "Conclusion",
+     "type": "textarea",
+     "group": "Roadmap",
+     "hint": "Summarize the key points of the technology roadmap. Emphasize the importance of continuous improvement and adaptation to emerging threats."
+    }
+   ],
+   "ops": [
+    {
+     "op": "strip",
+     "p": 0,
+     "find": " Template",
+     "expect": "Technology Roadmap Template"
+    },
+    {
+     "op": "rows",
+     "t": 0,
+     "start": 1,
+     "key": "approvers",
+     "cols": [
+      "name",
+      "title",
+      "date"
+     ],
+     "expect": [
+      "Name",
+      "Title",
+      "Date"
+     ],
+     "max": 5
+    },
+    {
+     "op": "replace",
+     "p": 3,
+     "find": "[Organization]",
+     "key": "company",
+     "expect": "This document outlines the roadmap for implementing various cybersecurity technologies such as IDM, XDR, and Zero Trust architecture in [Organization]. It includes the vision, objectives, initiatives, and projects to enhance the cybersecurity posture of the organization."
+    },
+    {
+     "op": "para",
+     "p": 5,
+     "key": "technologyOverview",
+     "also": [
+      6,
+      7,
+      8
+     ],
+     "expect": "Provide an overview of the technology being implemented. This may include:",
+     "alsoExpect": [
+      "- Definition and purpose of the technology",
+      "- Key features and benefits",
+      "- Relevance to the organization's cybersecurity strategy"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 10,
+     "key": "governanceFrameworks",
+     "also": [],
+     "expect": "Describe the governance frameworks that will be used to guide the implementation of the technology. This may include NIST, ISO 27001, CIS Controls, etc.",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 12,
+     "key": "policies",
+     "also": [],
+     "expect": "Outline the key policies that will be developed and implemented to support the technology. This may include policies on data protection, incident response, access control, etc.",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 14,
+     "key": "strategicObjectives",
+     "also": [],
+     "expect": "Define the strategic objectives of implementing the technology. These should be aligned with the organization's business goals and regulatory requirements.",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 16,
+     "key": "phasesForDevelopingExecutingEvaluatingAn",
+     "also": [
+      17,
+      18,
+      19,
+      20,
+      21
+     ],
+     "expect": "Describe the phases that will be followed to develop, execute, evaluate, and monitor the implementation of the technology. This may include:",
+     "alsoExpect": [
+      "- Phase 1: Assessment and Planning",
+      "- Phase 2: Implementation",
+      "- Phase 3: Evaluation",
+      "- Phase 4: Continuous Monitoring",
+      "- Phase 5: Continuous Improvement"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 23,
+     "key": "technologyVision",
+     "also": [],
+     "expect": "Articulate the vision for implementing the technology in the organization. This should be a clear and concise statement that reflects the organization's commitment to cybersecurity.",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 25,
+     "key": "initiativesAndProjects",
+     "also": [
+      26,
+      27,
+      28,
+      29
+     ],
+     "expect": "List the key initiatives and projects that will be undertaken to achieve the strategic objectives of implementing the technology. This may include:",
+     "alsoExpect": [
+      "- Initiative 1: Enhancing Network Security",
+      "- Initiative 2: Improving Endpoint Protection",
+      "- Initiative 3: Strengthening Access Controls",
+      "- Initiative 4: Conducting Regular Security Audits"
+     ]
+    },
+    {
+     "op": "para",
+     "p": 31,
+     "key": "conclusion",
+     "also": [],
+     "expect": "Summarize the key points of the technology roadmap. Emphasize the importance of continuous improvement and adaptation to emerging threats.",
+     "alsoExpect": []
+    }
+   ]
+  },
+  {
+   "id": "security-requirements",
+   "file": "Security Requirements Template.docx",
+   "docx": "security-requirements.docx",
+   "title": "Security Requirements",
+   "category": "Requirements",
+   "summary": "Security requirements for a project or system, by category, with roles, dependencies, acceptance criteria and approval.",
+   "fields": [
+    {
+     "key": "subject",
+     "label": "Project or initiative name",
+     "type": "text",
+     "group": "Document details",
+     "hint": "Name of the project, system or initiative"
+    },
+    {
+     "key": "date",
+     "label": "Date",
+     "type": "date",
+     "group": "Document details",
+     "hint": "Insert date",
+     "common": true
+    },
+    {
+     "key": "owner",
+     "label": "Owner",
+     "type": "text",
+     "group": "Document details",
+     "hint": "The security manager or department responsible",
+     "common": true
+    },
+    {
+     "key": "objective",
+     "label": "Objective",
+     "type": "textarea",
+     "group": "Purpose",
+     "hint": "Clearly state the purpose of the security requirements (e.g., to ensure compliance, mitigate risks, protect sensitive data, etc.)."
+    },
+    {
+     "key": "scope",
+     "label": "Scope",
+     "type": "textarea",
+     "group": "Purpose",
+     "hint": "Define the scope of the requirements (e.g., specific systems, processes, teams, or departments involved)."
+    },
+    {
+     "key": "accessControl",
+     "label": "Access Control",
+     "type": "textarea",
+     "group": "Security requirements",
+     "hint": "Define who should have access to the system/data and at what level. Example: \"All users must authenticate using multi-factor authentication (MFA).\" Example: \"Access to sensitive data must be restricted to authorized personnel only.\""
+    },
+    {
+     "key": "dataProtection",
+     "label": "Data Protection",
+     "type": "textarea",
+     "group": "Security requirements",
+     "hint": "Specify requirements for data encryption, storage, and transmission. Example: \"All sensitive data must be encrypted at rest and in transit using AES-256 encryption.\" Example: \"Data backups must be stored securely and tested regularly.\""
+    },
+    {
+     "key": "monitoringAndLogging",
+     "label": "Monitoring and Logging",
+     "type": "textarea",
+     "group": "Security requirements",
+     "hint": "Define requirements for system monitoring, logging, and alerting. Example: \"All user activity must be logged and retained for 12 months.\" Example: \"Critical security events must trigger alerts within 5 minutes of detection.\""
+    },
+    {
+     "key": "vulnerabilityManagement",
+     "label": "Vulnerability Management",
+     "type": "textarea",
+     "group": "Security requirements",
+     "hint": "Outline how vulnerabilities should be identified, assessed, and remediated. Example: \"All systems must be scanned for vulnerabilities on a weekly basis.\" Example: \"Critical vulnerabilities must be remediated within 48 hours of discovery.\""
+    },
+    {
+     "key": "compliance",
+     "label": "Compliance",
+     "type": "textarea",
+     "group": "Security requirements",
+     "hint": "Specify any regulatory or policy compliance requirements. Example: \"The system must comply with GDPR data protection standards.\" Example: \"All security controls must align with the organization's Information Security Policy.\""
+    },
+    {
+     "key": "incidentResponse",
+     "label": "Incident Response",
+     "type": "textarea",
+     "group": "Security requirements",
+     "hint": "Define requirements for incident detection, reporting, and response. Example: \"All security incidents must be reported to the Security Operations Center (SOC) within 1 hour.\" Example: \"An incident response plan must be in place and tested annually.\""
+    },
+    {
+     "key": "physicalSecurityIfApplicable",
+     "label": "Physical Security (if applicable)",
+     "type": "textarea",
+     "group": "Security requirements",
+     "hint": "Specify requirements for securing physical assets. Example: \"Server rooms must remain locked and accessible only to authorized personnel.\" Example: \"All visitors must be escorted in secure areas.\""
+    },
+    {
+     "key": "securityTeam",
+     "label": "Security Team",
+     "type": "textarea",
+     "group": "Roles and responsibilities",
+     "hint": "Define the responsibilities of the security team (e.g., providing guidance, conducting audits, etc.)."
+    },
+    {
+     "key": "projectTeamLeads",
+     "label": "Project/Team Leads",
+     "type": "textarea",
+     "group": "Roles and responsibilities",
+     "hint": "Specify their responsibilities (e.g., implementing controls, ensuring compliance, etc.)."
+    },
+    {
+     "key": "otherStakeholders",
+     "label": "Other Stakeholders",
+     "type": "textarea",
+     "group": "Roles and responsibilities",
+     "hint": "Include any other roles and their responsibilities."
+    },
+    {
+     "key": "dependencies",
+     "label": "Dependencies",
+     "type": "textarea",
+     "group": "Dependencies and acceptance",
+     "hint": "List any dependencies that must be addressed to meet the security requirements (e.g., software, tools, training, third-party services)."
+    },
+    {
+     "key": "acceptance",
+     "label": "Acceptance criteria",
+     "type": "textarea",
+     "group": "Dependencies and acceptance",
+     "hint": "Define how compliance with the security requirements will be measured or verified. Example: \"Requirement is met if MFA is enabled for all user accounts and tested successfully.\" Example: \"Requirement is met if vulnerability scans show no critical vulnerabilities for 30 days.\""
+    },
+    {
+     "key": "references",
+     "label": "References",
+     "type": "textarea",
+     "group": "Dependencies and acceptance",
+     "hint": "Include links or citations to relevant policies, standards, frameworks, or regulations (e.g., ISO 27001, NIST Cybersecurity Framework, etc.)."
+    },
+    {
+     "key": "preparedBy",
+     "label": "Prepared By",
+     "type": "text",
+     "group": "Approval",
+     "hint": "Name / Title"
+    },
+    {
+     "key": "reviewedBy",
+     "label": "Reviewed By",
+     "type": "text",
+     "group": "Approval",
+     "hint": "Name / Title"
+    },
+    {
+     "key": "approvedBy",
+     "label": "Approved By",
+     "type": "text",
+     "group": "Approval",
+     "hint": "Name / Title"
+    },
+    {
+     "key": "approvalDate",
+     "label": "Date of Approval",
+     "type": "date",
+     "group": "Approval"
+    },
+    {
+     "key": "revisions",
+     "label": "Revision history",
+     "type": "rows",
+     "group": "Approval",
+     "cols": [
+      {
+       "key": "version",
+       "label": "Version"
+      },
+      {
+       "key": "date",
+       "label": "Date"
+      },
+      {
+       "key": "desc",
+       "label": "Description of changes"
+      },
+      {
+       "key": "name",
+       "label": "Author"
+      }
+     ],
+     "heads": [
+      "Version",
+      "Date",
+      "Description of Changes",
+      "Author"
+     ]
+    }
+   ],
+   "ops": [
+    {
+     "op": "strip",
+     "p": 0,
+     "find": " Template",
+     "expect": "Security Requirements Template"
+    },
+    {
+     "op": "para",
+     "p": 2,
+     "key": "subject",
+     "also": [],
+     "expect": "[Insert name of project, system, or initiative]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 4,
+     "key": "date",
+     "also": [],
+     "expect": "[Insert date]",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 6,
+     "key": "owner",
+     "also": [],
+     "expect": "[Insert name of the security manager or department responsible for these requirements]",
+     "alsoExpect": []
+    },
+    {
+     "op": "after",
+     "p": 9,
+     "label": "Objective:",
+     "key": "objective",
+     "expect": "Objective: Clearly state the purpose of the security requirements (e.g., to ensure compliance, mitigate risks, protect sensitive data, etc.)."
+    },
+    {
+     "op": "after",
+     "p": 10,
+     "label": "Scope:",
+     "key": "scope",
+     "expect": "Scope: Define the scope of the requirements (e.g., specific systems, processes, teams, or departments involved)."
+    },
+    {
+     "op": "para",
+     "p": 15,
+     "key": "accessControl",
+     "also": [
+      16,
+      17
+     ],
+     "expect": "Define who should have access to the system/data and at what level.",
+     "alsoExpect": [
+      "Example: \"All users must authenticate using multi-factor authentication (MFA).\"",
+      "Example: \"Access to sensitive data must be restricted to authorized personnel only.\""
+     ]
+    },
+    {
+     "op": "para",
+     "p": 19,
+     "key": "dataProtection",
+     "also": [
+      20,
+      21
+     ],
+     "expect": "Specify requirements for data encryption, storage, and transmission.",
+     "alsoExpect": [
+      "Example: \"All sensitive data must be encrypted at rest and in transit using AES-256 encryption.\"",
+      "Example: \"Data backups must be stored securely and tested regularly.\""
+     ]
+    },
+    {
+     "op": "para",
+     "p": 23,
+     "key": "monitoringAndLogging",
+     "also": [
+      24,
+      25
+     ],
+     "expect": "Define requirements for system monitoring, logging, and alerting.",
+     "alsoExpect": [
+      "Example: \"All user activity must be logged and retained for 12 months.\"",
+      "Example: \"Critical security events must trigger alerts within 5 minutes of detection.\""
+     ]
+    },
+    {
+     "op": "para",
+     "p": 27,
+     "key": "vulnerabilityManagement",
+     "also": [
+      28,
+      29
+     ],
+     "expect": "Outline how vulnerabilities should be identified, assessed, and remediated.",
+     "alsoExpect": [
+      "Example: \"All systems must be scanned for vulnerabilities on a weekly basis.\"",
+      "Example: \"Critical vulnerabilities must be remediated within 48 hours of discovery.\""
+     ]
+    },
+    {
+     "op": "para",
+     "p": 31,
+     "key": "compliance",
+     "also": [
+      32,
+      33
+     ],
+     "expect": "Specify any regulatory or policy compliance requirements.",
+     "alsoExpect": [
+      "Example: \"The system must comply with GDPR data protection standards.\"",
+      "Example: \"All security controls must align with the organization's Information Security Policy.\""
+     ]
+    },
+    {
+     "op": "para",
+     "p": 35,
+     "key": "incidentResponse",
+     "also": [
+      36,
+      37
+     ],
+     "expect": "Define requirements for incident detection, reporting, and response.",
+     "alsoExpect": [
+      "Example: \"All security incidents must be reported to the Security Operations Center (SOC) within 1 hour.\"",
+      "Example: \"An incident response plan must be in place and tested annually.\""
+     ]
+    },
+    {
+     "op": "para",
+     "p": 39,
+     "key": "physicalSecurityIfApplicable",
+     "also": [
+      40,
+      41
+     ],
+     "expect": "Specify requirements for securing physical assets.",
+     "alsoExpect": [
+      "Example: \"Server rooms must remain locked and accessible only to authorized personnel.\"",
+      "Example: \"All visitors must be escorted in secure areas.\""
+     ]
+    },
+    {
+     "op": "after",
+     "p": 44,
+     "label": "Security Team:",
+     "key": "securityTeam",
+     "expect": "Security Team: Define the responsibilities of the security team (e.g., providing guidance, conducting audits, etc.)."
+    },
+    {
+     "op": "after",
+     "p": 45,
+     "label": "Project/Team Leads:",
+     "key": "projectTeamLeads",
+     "expect": "Project/Team Leads: Specify their responsibilities (e.g., implementing controls, ensuring compliance, etc.)."
+    },
+    {
+     "op": "after",
+     "p": 46,
+     "label": "Other Stakeholders:",
+     "key": "otherStakeholders",
+     "expect": "Other Stakeholders: Include any other roles and their responsibilities."
+    },
+    {
+     "op": "para",
+     "p": 49,
+     "key": "dependencies",
+     "also": [],
+     "expect": "List any dependencies that must be addressed to meet the security requirements (e.g., software, tools, training, third-party services).",
+     "alsoExpect": []
+    },
+    {
+     "op": "para",
+     "p": 52,
+     "key": "acceptance",
+     "also": [
+      53,
+      54
+     ],
+     "expect": "Define how compliance with the security requirements will be measured or verified.",
+     "alsoExpect": [
+      "Example: \"Requirement is met if MFA is enabled for all user accounts and tested successfully.\"",
+      "Example: \"Requirement is met if vulnerability scans show no critical vulnerabilities for 30 days.\""
+     ]
+    },
+    {
+     "op": "para",
+     "p": 57,
+     "key": "references",
+     "also": [],
+     "expect": "Include links or citations to relevant policies, standards, frameworks, or regulations (e.g., ISO 27001, NIST Cybersecurity Framework, etc.).",
+     "alsoExpect": []
+    },
+    {
+     "op": "after",
+     "p": 60,
+     "label": "Prepared By:",
+     "key": "preparedBy",
+     "expect": "Prepared By: [Name/Title]"
+    },
+    {
+     "op": "after",
+     "p": 61,
+     "label": "Reviewed By:",
+     "key": "reviewedBy",
+     "expect": "Reviewed By: [Name/Title]"
+    },
+    {
+     "op": "after",
+     "p": 62,
+     "label": "Approved By:",
+     "key": "approvedBy",
+     "expect": "Approved By: [Name/Title]"
+    },
+    {
+     "op": "after",
+     "p": 63,
+     "label": "Date of Approval:",
+     "key": "approvalDate",
+     "expect": "Date of Approval: [Insert date]"
+    },
+    {
+     "op": "rows",
+     "t": 0,
+     "start": 1,
+     "key": "revisions",
+     "cols": [
+      "version",
+      "date",
+      "desc",
+      "name"
+     ],
+     "expect": [
+      "Version",
+      "Date",
+      "Description of Changes",
+      "Author"
+     ],
+     "max": 2
+    },
+    {
+     "op": "cut",
+     "t": 0,
+     "expect": [
+      "Version",
+      "Date",
+      "Description of Changes",
+      "Author"
+     ]
+    }
+   ]
+  }
+ ]
+}
