@@ -1,0 +1,53 @@
+name: Suggest a glossary term
+description: Add a term to the IT, OT and security glossary, or fix one.
+title: "Glossary: "
+labels: ["glossary"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping. Every suggestion is checked before it's added to the glossary and to www.mansiosec.com/glossary.
+        Write the definition in your own words (don't paste it from a website or standard), and add a source we can check if you have one.
+        Please don't include anything confidential about your organization.
+  - type: input
+    id: term
+    attributes:
+      label: Term
+      placeholder: e.g. SASE
+    validations:
+      required: true
+  - type: input
+    id: aliases
+    attributes:
+      label: Other names or the expansion (optional)
+      placeholder: e.g. Secure Access Service Edge
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [OT and ICS, Core IT, IT security, Network and server architecture, ITIL, Regulations and frameworks, Risk (SCF), SAP, PeopleSoft, AVEVA PI, Zenon SCADA, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: definition
+    attributes:
+      label: Definition
+      description: One or two plain sentences.
+    validations:
+      required: true
+  - type: input
+    id: example
+    attributes:
+      label: Example of use (optional)
+  - type: input
+    id: source
+    attributes:
+      label: Source (optional)
+      placeholder: A link to a standard, vendor document or other reference
+  - type: checkboxes
+    id: own-words
+    attributes:
+      label: License
+      options:
+        - label: I wrote this in my own words, and it can be shared under CC BY 4.0 with the rest of the glossary.
+          required: true

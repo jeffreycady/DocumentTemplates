@@ -1,0 +1,1374 @@
+{
+ "title": "Common Terms Glossary: IT, OT and Security",
+ "license": "CC-BY-4.0",
+ "categories": [
+  "OT and ICS",
+  "Core IT",
+  "IT security",
+  "Network and server architecture",
+  "ITIL",
+  "Regulations and frameworks",
+  "Risk (SCF)",
+  "SAP",
+  "PeopleSoft",
+  "AVEVA PI",
+  "Zenon SCADA"
+ ],
+ "source": "https://github.com/jeffreycady/DocumentTemplates",
+ "terms": [
+  {
+   "term": "0-Day",
+   "aliases": [
+    "Zero-Day Vulnerability"
+   ],
+   "category": "IT security",
+   "def": "A flaw unknown to the vendor and unpatched.",
+   "example": "Exploits targeting 0-Day vulnerabilities require immediate mitigation."
+  },
+  {
+   "term": "2-tier",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "App Designer connects directly to DB."
+  },
+  {
+   "term": "3-tier",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "App Designer → App Server → DB (reduced client DB requirements)."
+  },
+  {
+   "term": "4-tier",
+   "aliases": [
+    "PIA"
+   ],
+   "category": "PeopleSoft",
+   "def": "Browser → Web → App → DB (post-PeopleTools 8.4 default for functional UI)."
+  },
+  {
+   "term": "ABAP Stack",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Business logic and core ERP modules."
+  },
+  {
+   "term": "Acceptable Risk Threshold",
+   "aliases": [],
+   "category": "Risk (SCF)",
+   "def": "Limit above which risk requires treatment."
+  },
+  {
+   "term": "Access Control",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Role-based access, SoD analysis, provisioning."
+  },
+  {
+   "term": "AOS",
+   "aliases": [
+    "Application Object Server"
+   ],
+   "category": "AVEVA PI",
+   "def": "The runtime execution engine within AVEVA System Platform that hosts and executes automation objects across a distributed Galaxy infrastructure. It manages real-time data acquisition, process control logic, and communications with field devices through protocol drivers and IO Servers."
+  },
+  {
+   "term": "APIs & OData",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Used for data exchange with ECC or GRC."
+  },
+  {
+   "term": "App Server",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Tuxedo/Jolt domain (business logic services)."
+  },
+  {
+   "term": "Application Services Framework",
+   "aliases": [
+    "ASF"
+   ],
+   "category": "PeopleSoft",
+   "def": "Newer REST-native framework (PeopleTools 8.60+) simplifying API creation/consumption vs. heavy IB metadata—intended to coexist (use ASF for simple REST, IB for complex orchestration/async)."
+  },
+  {
+   "term": "ASF",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "REST-native provider/consumer for lightweight APIs. [docs.oracle.com],",
+   "source": "linkedin.com"
+  },
+  {
+   "term": "Audit Management",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Audit lifecycle support."
+  },
+  {
+   "term": "Availability Management",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "Ensures services meet agreed availability levels.",
+   "example": "We monitor uptime as part of availability management."
+  },
+  {
+   "term": "AVEVA Connect",
+   "aliases": [],
+   "category": "AVEVA PI",
+   "def": "SaaS platform providing centralized access to AVEVA cloud services, including Data Hub and analytics tools."
+  },
+  {
+   "term": "AVEVA Data Hub",
+   "aliases": [],
+   "category": "AVEVA PI",
+   "def": "Cloud-based service for aggregating and sharing PI System data across sites and with external stakeholders for advanced analytics."
+  },
+  {
+   "term": "Bare Metal Server",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A physical server dedicated to one tenant, offering full hardware access.",
+   "example": "The database runs on a bare metal server for maximum IOPS."
+  },
+  {
+   "term": "Blade Server",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A modular server that shares power and cooling within a chassis.",
+   "example": "Blade servers are used in our high-density compute environment."
+  },
+  {
+   "term": "BW/4HANA",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Optimized for SAP HANA, supports real-time analytics.",
+   "source": "help.sap.com"
+  },
+  {
+   "term": "BYOD",
+   "aliases": [
+    "Bring Your Own Device"
+   ],
+   "category": "Core IT",
+   "def": "Policy allowing employees to use personal devices for work.",
+   "example": "Employees accessing corporate email from their personal smartphones."
+  },
+  {
+   "term": "CAB",
+   "aliases": [
+    "Change Advisory Board"
+   ],
+   "category": "ITIL",
+   "def": "A group that evaluates and approves changes.",
+   "example": "The CAB meets weekly to assess upcoming infrastructure changes."
+  },
+  {
+   "term": "Campus Solutions",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Campus Community, Admissions, Student Records, Aid, Student Financials."
+  },
+  {
+   "term": "Campus Solutions details",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Provides Campus Community, Recruiting & Admissions, Student Records, Academic Advisement, Financial Aid, Student Financials, and self-service; includes integrations to HCM for person data."
+  },
+  {
+   "term": "Capacity Management",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "Ensures IT services meet performance and resource needs.",
+   "example": "Capacity planning helps us prepare for seasonal traffic spikes."
+  },
+  {
+   "term": "Change Enablement",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "Practice ensuring changes are introduced with minimal disruption. Formerly “Change Management.”",
+   "example": "CAB reviews all high-risk changes before implementation."
+  },
+  {
+   "term": "CI",
+   "aliases": [
+    "Configuration Item"
+   ],
+   "category": "ITIL",
+   "def": "Any component that must be managed to deliver an IT service.",
+   "example": "The router is a CI tracked in the CMDB."
+  },
+  {
+   "term": "Cluster",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A group of servers working together to provide high availability and scalability.",
+   "example": "Our SQL cluster ensures database uptime during failover."
+  },
+  {
+   "term": "CMDB",
+   "aliases": [
+    "Configuration Management Database"
+   ],
+   "category": "ITIL",
+   "def": "A repository of CIs and their relationships.",
+   "example": "We updated the CMDB after deploying new virtual machines."
+  },
+  {
+   "term": "Consuming external REST",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Multiple approaches exist (IB metadata, ASF, or PeopleCode patterns), with Oracle/experts highlighting trade-offs for logging, reuse, and speed."
+  },
+  {
+   "term": "Cooling",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "Systems to manage heat in data centers; includes air, liquid, and in-row cooling.",
+   "example": "In-row cooling units maintain optimal temperature for blade servers."
+  },
+  {
+   "term": "CP-RMM",
+   "aliases": [
+    "Cybersecurity & Privacy Risk Management Model"
+   ],
+   "category": "IT security",
+   "def": "A framework for calculating and managing risk.",
+   "example": "CP-RMM scoring used to prioritize patching."
+  },
+  {
+   "term": "CSI",
+   "aliases": [
+    "Continual Service Improvement"
+   ],
+   "category": "ITIL",
+   "def": "Practice focused on aligning services with changing business needs.",
+   "example": "We use CSI to improve our incident resolution times."
+  },
+  {
+   "term": "CUI",
+   "aliases": [
+    "Controlled Unclassified Information"
+   ],
+   "category": "Regulations and frameworks",
+   "def": "Sensitive government-related data requiring protection.",
+   "example": "Technical drawings for defense projects classified as CUI."
+  },
+  {
+   "term": "Customer",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "The person who defines service requirements and accepts outcomes.",
+   "example": "The finance department is the customer for our payroll system."
+  },
+  {
+   "term": "CW",
+   "aliases": [
+    "Control Weighting"
+   ],
+   "category": "IT security",
+   "def": "Factor representing strength of security controls.",
+   "example": "Strong firewalls increase CW, reducing residual risk."
+  },
+  {
+   "term": "Cybersecurity & Privacy Risk Management Model",
+   "aliases": [
+    "C|P-RMM"
+   ],
+   "category": "Risk (SCF)",
+   "def": "Integrated risk scoring methodology."
+  },
+  {
+   "term": "Cybersecurity Maturity Model Certification (CMMC) 2.0",
+   "aliases": [],
+   "category": "Regulations and frameworks",
+   "def": "Levels 1–3; NIST SP 800-171 alignment for Controlled Unclassified Information (CUI)."
+  },
+  {
+   "term": "DB",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Oracle/SQL Server/DB2."
+  },
+  {
+   "term": "Defense-in-Depth",
+   "aliases": [
+    "Layered Security Approach"
+   ],
+   "category": "OT and ICS",
+   "def": "Multiple layers of security controls across levels."
+  },
+  {
+   "term": "DHCP",
+   "aliases": [
+    "Dynamic Host Configuration Protocol"
+   ],
+   "category": "Network and server architecture",
+   "def": "Automatically assigns IP addresses and network settings to devices.",
+   "example": "DHCP assigns IPs to laptops on the guest Wi-Fi network."
+  },
+  {
+   "term": "DMZ",
+   "aliases": [
+    "Demilitarized Zone"
+   ],
+   "category": "Core IT",
+   "def": "A network segment that acts as a buffer between internal systems and the public internet.",
+   "example": "Web servers hosting public sites are placed in the DMZ."
+  },
+  {
+   "term": "DNS",
+   "aliases": [
+    "Domain Name System"
+   ],
+   "category": "Network and server architecture",
+   "def": "Resolves domain names to IP addresses.",
+   "example": "The DNS server translates “intranet.example.com” to its internal IP."
+  },
+  {
+   "term": "Dual Stack",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Used in older versions of SAP PI and Solution Manager.",
+   "source": "people.redhat.com"
+  },
+  {
+   "term": "Edge Data Store",
+   "aliases": [],
+   "category": "AVEVA PI",
+   "def": "Lightweight data collection and storage at the edge, enabling local buffering and initial analytics before forwarding data upstream."
+  },
+  {
+   "term": "EDR",
+   "aliases": [
+    "Endpoint Detection and Response"
+   ],
+   "category": "IT security",
+   "def": "Endpoint telemetry and containment.",
+   "example": "EDR isolates compromised endpoints."
+  },
+  {
+   "term": "Exploit Kit",
+   "aliases": [
+    "Attack Toolkit"
+   ],
+   "category": "IT security",
+   "def": "Software used to automate exploitation of vulnerabilities.",
+   "example": "Cybercriminals use exploit kits to target outdated browsers."
+  },
+  {
+   "term": "Export Administration Regulations",
+   "aliases": [
+    "EAR"
+   ],
+   "category": "Regulations and frameworks",
+   "def": "Encryption items ECCN 5A002/5D002/5E002; License Exception ENC (§740.17)."
+  },
+  {
+   "term": "Firewall",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A security device that filters traffic based on rules; can be hardware or software.",
+   "example": "The firewall blocks unauthorized access to the OT DMZ."
+  },
+  {
+   "term": "Full Cloud HCM",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Employee Central, Payroll, Time, Analytics."
+  },
+  {
+   "term": "General Data Protection Regulation",
+   "aliases": [
+    "GDPR"
+   ],
+   "category": "Regulations and frameworks",
+   "def": "Article 4 definitions – personal data, processing, controller, processor."
+  },
+  {
+   "term": "Governance",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "Ensures policies and objectives are followed in IT service delivery.",
+   "example": "Governance ensures our IT strategy aligns with corporate goals."
+  },
+  {
+   "term": "HAZOP",
+   "aliases": [
+    "Hazard and Operability Study"
+   ],
+   "category": "IT security",
+   "def": "Risk assessment for operational processes.",
+   "example": "HAZOP conducted before patching OT systems."
+  },
+  {
+   "term": "HCM/FSCM",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "HR Core, Payroll, Time, Benefits; GL/AP/AR/PO/AM/Projects/Supply Chain."
+  },
+  {
+   "term": "Health Insurance Portability and Accountability Act (HIPAA) Security Rule",
+   "aliases": [],
+   "category": "Regulations and frameworks",
+   "def": "Safeguards for electronic Protected Health Information (ePHI)."
+  },
+  {
+   "term": "Historian",
+   "aliases": [],
+   "category": "AVEVA PI",
+   "def": "A specialized database optimized for time-series data, typically used in industrial environments to store high-frequency process data from sensors and control systems. It supports efficient compression, retrieval, and analytics for operational and business decision-making."
+  },
+  {
+   "term": "Hypervisor",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "Virtualization software installed directly on hardware to manage VMs.",
+   "example": "VMware ESXi is used as a bare metal hypervisor in our data center."
+  },
+  {
+   "term": "Identity & APIs",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Use OAuth2 for REST services, Integration Broker access control, and PeopleSoft row-level security for data exposure.",
+   "source": "ib.books.c...sgroup.com"
+  },
+  {
+   "term": "IE",
+   "aliases": [
+    "Impact Effect"
+   ],
+   "category": "IT security",
+   "def": "Severity of consequences if a vulnerability is exploited.",
+   "example": "IE is critical for systems handling financial transactions."
+  },
+  {
+   "term": "Incident",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "An unplanned interruption or reduction in the quality of an IT service.",
+   "example": "A server crash is logged as an incident in the ITSM tool."
+  },
+  {
+   "term": "Industrial Control Systems",
+   "aliases": [
+    "ICS"
+   ],
+   "category": "OT and ICS",
+   "def": "Supervisory Control and Data Acquisition (SCADA), Distributed Control System (DCS), Programmable Logic Controller (PLC)-based control systems."
+  },
+  {
+   "term": "Inherent Risk",
+   "aliases": [],
+   "category": "Risk (SCF)",
+   "def": "Impact × Likelihood before controls."
+  },
+  {
+   "term": "Integration Broker",
+   "aliases": [
+    "IB"
+   ],
+   "category": "PeopleSoft",
+   "def": "REST/SOAP service operations, queues/routing, transforms."
+  },
+  {
+   "term": "International Electrotechnical Commission (IEC)/International Society of Automation (ISA)-62443",
+   "aliases": [],
+   "category": "OT and ICS",
+   "def": "Zones and conduits, Security Levels (SL1–SL4), role responsibilities."
+  },
+  {
+   "term": "International Traffic in Arms Regulations",
+   "aliases": [
+    "ITAR"
+   ],
+   "category": "Regulations and frameworks",
+   "def": "Defense articles/services, technical data, exports/reexports/retransfers, releases."
+  },
+  {
+   "term": "Intune/Shavlik",
+   "aliases": [
+    "Patch Deployment Tools"
+   ],
+   "category": "Core IT",
+   "def": "Software for automating patch rollout.",
+   "example": "Intune used to deploy Windows updates across endpoints."
+  },
+  {
+   "term": "IoT",
+   "aliases": [
+    "Internet of Things"
+   ],
+   "category": "Core IT",
+   "def": "Network of physical devices connected to the internet for data exchange.",
+   "example": "Smart sensors in manufacturing plants sending data to cloud dashboards."
+  },
+  {
+   "term": "IT",
+   "aliases": [
+    "Information Technology"
+   ],
+   "category": "Core IT",
+   "def": "Systems and processes related to computing and data management.",
+   "example": "Corporate email servers and ERP systems fall under IT."
+  },
+  {
+   "term": "ITAR",
+   "aliases": [
+    "International Traffic in Arms Regulations"
+   ],
+   "category": "Regulations and frameworks",
+   "def": "U.S. regulations controlling defense-related exports.",
+   "example": "Exporting encrypted software requires ITAR compliance."
+  },
+  {
+   "term": "ITIL",
+   "aliases": [
+    "Information Technology Infrastructure Library"
+   ],
+   "category": "ITIL",
+   "def": "A framework of best practices for delivering IT services aligned with business needs.",
+   "example": "Our incident response process follows ITIL guidelines."
+  },
+  {
+   "term": "ITSM",
+   "aliases": [
+    "IT Service Management"
+   ],
+   "category": "ITIL",
+   "def": "The implementation and management of quality IT services that meet business needs.",
+   "example": "We use ITSM tools to manage service requests and incidents."
+  },
+  {
+   "term": "Java Stack",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Technical components like Portal, XI (Exchange Infrastructure), and Web Services."
+  },
+  {
+   "term": "KPI",
+   "aliases": [
+    "Key Performance Indicator"
+   ],
+   "category": "Core IT",
+   "def": "Metrics to measure program success.",
+   "example": "KPI includes percentage of patches applied within SLA."
+  },
+  {
+   "term": "LAN",
+   "aliases": [
+    "Local Area Network"
+   ],
+   "category": "Network and server architecture",
+   "def": "A LAN is a network that connects computers and devices within a limited geographic area—such as an office, building, or campus—using wired (Ethernet) or wireless (Wi-Fi) connections. LANs typically offer high-speed communication and are managed internally.",
+   "example": "The engineering team shares files and printers over the office LAN, which connects all workstations via Ethernet switches."
+  },
+  {
+   "term": "Load Balancer",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "Distributes traffic across multiple servers to optimize performance and availability.",
+   "example": "The web app uses a load balancer to route traffic to healthy backend nodes."
+  },
+  {
+   "term": "Management Console",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "Interface for administering servers and VMs.",
+   "example": "We use vCenter to manage our VMware infrastructure."
+  },
+  {
+   "term": "MF",
+   "aliases": [
+    "Mitigating Factors"
+   ],
+   "category": "IT security",
+   "def": "Conditions that reduce risk impact or likelihood.",
+   "example": "Network segmentation acts as an MF for OT vulnerabilities."
+  },
+  {
+   "term": "MITRE ATT&CK for ICS",
+   "aliases": [],
+   "category": "OT and ICS",
+   "def": "Tactics/techniques for ICS adversary behavior."
+  },
+  {
+   "term": "ML",
+   "aliases": [
+    "Maturity Level"
+   ],
+   "category": "IT security",
+   "def": "Degree of process development and optimization.",
+   "example": "VPMP ML improves as automation tools are implemented."
+  },
+  {
+   "term": "MPLS",
+   "aliases": [
+    "Multiprotocol Label Switching"
+   ],
+   "category": "Network and server architecture",
+   "def": "MPLS is a high-performance routing technique used in enterprise and service provider networks to direct data from one node to another based on short path labels rather than long network addresses. It enables efficient traffic engineering, supports multiple service types (e.g., IP, ATM, Frame Relay), and improves speed and reliability.",
+   "example": "“The organization uses MPLS to prioritize voice and video traffic across its WAN, ensuring low latency and high availability between global sites.”"
+  },
+  {
+   "term": "MTTR",
+   "aliases": [
+    "Mean Time to Remediate"
+   ],
+   "category": "IT security",
+   "def": "Average time taken to fix vulnerabilities.",
+   "example": "VPMP tracks MTTR to measure efficiency."
+  },
+  {
+   "term": "N-day vulnerability",
+   "aliases": [],
+   "category": "IT security",
+   "def": "Known security flaw that has been publicly disclosed, where \"N\" represents the number of days since the vulnerability became public or a patch was released.",
+   "example": "Organizations that fail to patch their systems within this time frame are at risk of an N-day attack."
+  },
+  {
+   "term": "NAS",
+   "aliases": [
+    "Network Attached Storage"
+   ],
+   "category": "Network and server architecture",
+   "def": "File-level storage accessible over a network.",
+   "example": "NAS stores shared documents for the engineering team."
+  },
+  {
+   "term": "Network and Information Security Directive 2",
+   "aliases": [
+    "NIS2"
+   ],
+   "category": "Regulations and frameworks",
+   "def": "Obligations for essential/important entities; incident reporting."
+  },
+  {
+   "term": "Network segmentation",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Place web/app/db on separate subnets/VLANs; use WAF/reverse proxy in front of WebLogic and bastion for admin access on OCI.",
+   "source": "docs.oracle.com"
+  },
+  {
+   "term": "NIC",
+   "aliases": [
+    "Network Interface Card"
+   ],
+   "category": "Network and server architecture",
+   "def": "Hardware enabling network connectivity for servers.",
+   "example": "Each VM is assigned a virtual NIC for traffic routing."
+  },
+  {
+   "term": "NIST CSF",
+   "aliases": [],
+   "category": "IT security",
+   "def": "National Institute of Standards and Technology Cybersecurity Framework: A set of guidelines for managing cybersecurity risk.",
+   "example": "The organization aligns its VPMP with NIST CSF standards."
+  },
+  {
+   "term": "OCI",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Reference architectures (LB, bastion, private subnets, DR). [docs.oracle.com],",
+   "source": "oracle.com"
+  },
+  {
+   "term": "OL",
+   "aliases": [
+    "Occurrence Likelihood"
+   ],
+   "category": "IT security",
+   "def": "Probability that a vulnerability will be exploited.",
+   "example": "OL is high for internet-facing systems with known exploits."
+  },
+  {
+   "term": "Open Platform Communications Unified Architecture",
+   "aliases": [
+    "OPC UA"
+   ],
+   "category": "OT and ICS",
+   "def": "Secure, platform-independent industrial interoperability."
+  },
+  {
+   "term": "Operational Technology",
+   "aliases": [
+    "OT"
+   ],
+   "category": "OT and ICS",
+   "def": "Programmable systems interacting with physical processes (per National Institute of Standards and Technology (NIST) SP 800-82r3)."
+  },
+  {
+   "term": "OT",
+   "aliases": [
+    "Operational Technology"
+   ],
+   "category": "Core IT",
+   "def": "Hardware and software that detects or causes changes through direct monitoring and control of physical devices.",
+   "example": "Factory PLCs controlling production lines are OT systems."
+  },
+  {
+   "term": "P1–P5",
+   "aliases": [
+    "Patch Priority Levels"
+   ],
+   "category": "IT security",
+   "def": "Timelines for applying patches.",
+   "example": "P1 patches applied within 72 hours; P5 patches applied ASAP for BYOD."
+  },
+  {
+   "term": "Patching",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Align PUM cadence with enterprise VPMP/SLAs; Change Assistant orchestrates promotion across tiers."
+  },
+  {
+   "term": "Payment Card Industry Data Security Standard (PCI DSS) v4.0.1",
+   "aliases": [],
+   "category": "Regulations and frameworks",
+   "def": "Cardholder data protection."
+  },
+  {
+   "term": "PDCA",
+   "aliases": [
+    "Plan-Do-Check-Act"
+   ],
+   "category": "Core IT",
+   "def": "A continuous improvement cycle for processes.",
+   "example": "VPMP patching workflow follows PDCA for iterative improvement."
+  },
+  {
+   "term": "PeopleSoft Integration Broker",
+   "aliases": [
+    "IB"
+   ],
+   "category": "PeopleSoft",
+   "def": "Native middleware for SOAP, REST, and HTTP services. It uses Service Operations, Queues, Routings, Handlers, and XSLT/AE transforms; supports component interface–based services and OpenAPI-style REST resources."
+  },
+  {
+   "term": "PeopleSoft Internet Architecture",
+   "aliases": [
+    "PIA"
+   ],
+   "category": "PeopleSoft",
+   "def": "Classic n-tier model with Web Server (WebLogic/WebSphere) → Application Server (Tuxedo/Jolt) → Database (Oracle/SQL Server/DB2), plus Process Scheduler for batch/reporting. Browser requests hit servlets on the web tier, which invoke services on the app server that generate SQL to the database and return responses back through the stack. [docs.oracle.com],",
+   "source": "peoplesoftcareer.com"
+  },
+  {
+   "term": "PeopleSoft on Oracle Cloud Infrastructure",
+   "aliases": [
+    "OCI"
+   ],
+   "category": "PeopleSoft",
+   "def": "Oracle-validated reference architectures for lift-and-shift hosting (IaaS/PaaS), adding load balancing, bastion hosts, DR, cost governance, and monitoring. Not SaaS; BYOL applies."
+  },
+  {
+   "term": "PeopleSoft Update Manager",
+   "aliases": [
+    "PUM"
+   ],
+   "category": "PeopleSoft",
+   "def": "Selective adoption model for 9.2 apps—Oracle ships cumulative Update Images (PIs) per product family; you select fixes/features into a Change Assistant package and apply them (VirtualBox or NativeOS images available). This replaces pre-9.2 bundles/maintenance packs and reduces major upgrades."
+  },
+  {
+   "term": "PI Interfaces",
+   "aliases": [],
+   "category": "AVEVA PI",
+   "def": "Connectors that gather data from various sources (PLC, DCS, SCADA, IIoT devices) and transmit it to the PI Server using secure protocols."
+  },
+  {
+   "term": "PI Server",
+   "aliases": [],
+   "category": "AVEVA PI",
+   "def": "The core on-premises historian that stores time-series data, manages asset frameworks, and provides data access for visualization and analytics."
+  },
+  {
+   "term": "PI Vision",
+   "aliases": [],
+   "category": "AVEVA PI",
+   "def": "Visualization tool for creating dashboards and trends from PI System data, enabling operators and engineers to monitor and analyze processes."
+  },
+  {
+   "term": "PII",
+   "aliases": [
+    "Personally Identifiable Information"
+   ],
+   "category": "Core IT",
+   "def": "Data that can identify an individual.",
+   "example": "Employee SSNs and home addresses are PII."
+  },
+  {
+   "term": "PIR",
+   "aliases": [
+    "Post Implementation Review"
+   ],
+   "category": "Core IT",
+   "def": "Evaluation after changes are applied.",
+   "example": "PIR conducted after major patching cycle."
+  },
+  {
+   "term": "Plan of Action & Milestones",
+   "aliases": [
+    "POA&M"
+   ],
+   "category": "Risk (SCF)",
+   "def": "Document treatment plans."
+  },
+  {
+   "term": "PO Enhancements",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Adds BPM (Business Process Management) and BRM (Business Rules Management).",
+   "source": "geeksforgeeks.org"
+  },
+  {
+   "term": "Power Redundancy",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "Backup systems (UPS, generators) to ensure continuous operation.",
+   "example": "Dual power supplies and UPS units protect against outages."
+  },
+  {
+   "term": "Practice",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "A set of organizational resources designed for performing work or accomplishing an objective. Replaces “process” in ITIL v4.",
+   "example": "Change Enablement is one of the 34 ITIL practices."
+  },
+  {
+   "term": "Problem",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "The underlying cause of one or more incidents.",
+   "example": "Recurring login failures prompted a problem investigation."
+  },
+  {
+   "term": "Process Control",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Internal control automation."
+  },
+  {
+   "term": "Process Scheduler",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Batch/AE/SQR/BI Publisher."
+  },
+  {
+   "term": "PUM",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Update Images + Change Assistant; selective adoption.",
+   "source": "docs.oracle.com"
+  },
+  {
+   "term": "PUM benefits & cadence",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Lower maintenance cost/time; selective adoption; continuous images (commonly 3x/year) per advisory content from partners and Oracle."
+  },
+  {
+   "term": "Purdue Level 0: Physical Process",
+   "aliases": [
+    "Physical Process"
+   ],
+   "category": "OT and ICS",
+   "def": "Sensors, actuators, motors, valves—direct interaction with physical equipment."
+  },
+  {
+   "term": "Purdue Level 1: Intelligent Devices",
+   "aliases": [
+    "Intelligent Devices"
+   ],
+   "category": "OT and ICS",
+   "def": "PLCs (Programmable Logic Controllers), RTUs (Remote Terminal Units)—control and monitor Level 0 devices."
+  },
+  {
+   "term": "Purdue Level 2: Control Systems",
+   "aliases": [
+    "Control Systems"
+   ],
+   "category": "OT and ICS",
+   "def": "SCADA (Supervisory Control and Data Acquisition), DCS (Distributed Control Systems), HMIs—supervise and visualize processes."
+  },
+  {
+   "term": "Purdue Level 3.5: Industrial DMZ",
+   "aliases": [
+    "Industrial DMZ"
+   ],
+   "category": "OT and ICS",
+   "def": "Demilitarized zone between OT and IT—firewalls, proxies, brokers for secure data exchange."
+  },
+  {
+   "term": "Purdue Level 3: Operations Management",
+   "aliases": [
+    "Operations Management"
+   ],
+   "category": "OT and ICS",
+   "def": "MES (Manufacturing Execution Systems), batch management, data historians—manage plant-wide operations."
+  },
+  {
+   "term": "Purdue Level 4: Business Logistics",
+   "aliases": [
+    "Business Logistics"
+   ],
+   "category": "OT and ICS",
+   "def": "ERP (Enterprise Resource Planning), supply chain, scheduling—corporate IT systems."
+  },
+  {
+   "term": "Purdue Level 5: Cloud / External",
+   "aliases": [
+    "Cloud / External"
+   ],
+   "category": "OT and ICS",
+   "def": "Cloud analytics, remote access, external business systems—modern addition for Industry 4.0."
+  },
+  {
+   "term": "Purdue Model",
+   "aliases": [
+    "ISA-95"
+   ],
+   "category": "OT and ICS",
+   "def": "Levels 0–5 separating process to enterprise; DMZ between Levels 3–4."
+  },
+  {
+   "term": "Rack Server",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A standalone server mounted in a rack; each unit has its own power and cooling.",
+   "example": "We added 2U rack servers to expand compute capacity."
+  },
+  {
+   "term": "Residual Risk",
+   "aliases": [],
+   "category": "Risk (SCF)",
+   "def": "Risk after considering controls."
+  },
+  {
+   "term": "REST/SOAP in PeopleTools",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "PeopleSoft delivers REST endpoints for HCM/FSCM and supports REST/HTTP/SOAP service styles with security and OAuth2 considerations."
+  },
+  {
+   "term": "RFC",
+   "aliases": [
+    "Request for Change"
+   ],
+   "category": "IT security",
+   "def": "Formal proposal for system modifications.",
+   "example": "RFC submitted before applying major OS updates."
+  },
+  {
+   "term": "Risk",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "A possible event that could impact objectives.",
+   "example": "We assess risk before approving major infrastructure changes."
+  },
+  {
+   "term": "Risk Impact Effects",
+   "aliases": [],
+   "category": "Risk (SCF)",
+   "def": "Categories for scoring impact (safety, operational, financial, regulatory)."
+  },
+  {
+   "term": "Risk Levels & Likelihoods",
+   "aliases": [],
+   "category": "Risk (SCF)",
+   "def": "Calibrated scales for scoring."
+  },
+  {
+   "term": "Risk Management",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Risk identification and mitigation."
+  },
+  {
+   "term": "Roadmap & support",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Oracle maintains a rolling 10-year commitment (e.g., support currently extended to at least the mid-2030s), while promoting Cloud Apps for innovation—Quest’s guidance frames “no forced move” but articulates benefits to cloud modernization."
+  },
+  {
+   "term": "Router",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A Layer 3 device that routes packets between networks using IP addresses.",
+   "example": "The router connects the plant network to the corporate WAN."
+  },
+  {
+   "term": "SAN",
+   "aliases": [
+    "Storage Area Network"
+   ],
+   "category": "Network and server architecture",
+   "def": "High-speed network providing block-level storage to servers.",
+   "example": "SAN is used for mission-critical database storage."
+  },
+  {
+   "term": "SAP Access Control",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Prevent unauthorized access; enforce segregation of duties."
+  },
+  {
+   "term": "SAP Audit Management",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Streamline audit planning and reporting."
+  },
+  {
+   "term": "SAP Business Integrity Screening",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Detect and prevent fraud."
+  },
+  {
+   "term": "SAP BW / BW/4HANA",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Business Warehouse for analytics and reporting."
+  },
+  {
+   "term": "SAP Cloud Identity Access Governance",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Manage identity and access across hybrid environments."
+  },
+  {
+   "term": "SAP CPI",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Middleware for cloud/on-premise integration."
+  },
+  {
+   "term": "SAP ECC (ERP Central Component)",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Legacy ERP suite supporting core modules like FI (Financial Accounting), CO (Controlling), MM (Materials Management), SD (Sales & Distribution), HR, etc."
+  },
+  {
+   "term": "SAP Global Trade Services",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Manage international trade compliance."
+  },
+  {
+   "term": "SAP NetWeaver",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Technology platform for integrating SAP and non-SAP applications."
+  },
+  {
+   "term": "SAP PI/PO (Process Integration / Process Orchestration)",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Middleware platform for integrating SAP and non-SAP systems."
+  },
+  {
+   "term": "SAP Process Control",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Automate and monitor internal controls."
+  },
+  {
+   "term": "SAP Risk Management",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Identify, assess, and mitigate enterprise risks."
+  },
+  {
+   "term": "SAP Tax Compliance",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Ensure accurate tax data and compliance."
+  },
+  {
+   "term": "Sarbanes-Oxley Act (SOX) §404",
+   "aliases": [],
+   "category": "Regulations and frameworks",
+   "def": "Internal control over financial reporting."
+  },
+  {
+   "term": "SASE",
+   "aliases": [
+    "Secure Access Service Edge"
+   ],
+   "category": "IT security",
+   "def": "Cloud-delivered convergence of networking & security.",
+   "example": "SASE secures remote user access."
+  },
+  {
+   "term": "Security",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "PS security model, row-level security, SSO/OAuth2 for REST."
+  },
+  {
+   "term": "Segmentation",
+   "aliases": [],
+   "category": "OT and ICS",
+   "def": "Each level is isolated to reduce lateral movement and contain threats."
+  },
+  {
+   "term": "Service",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "A means of delivering value to customers by facilitating outcomes.",
+   "example": "Email is a service that enables business communication."
+  },
+  {
+   "term": "Service Desk",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "The single point of contact between users and IT.",
+   "example": "The service desk logs and triages all incoming incidents."
+  },
+  {
+   "term": "Service Request",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "A user request for information, advice, or access to a service.",
+   "example": "A request for a new laptop is a service request."
+  },
+  {
+   "term": "SIEM",
+   "aliases": [
+    "Security Information and Event Management"
+   ],
+   "category": "IT security",
+   "def": "Centralized security log/event correlation and alerting.",
+   "example": "SIEM aggregates logs for threat detection."
+  },
+  {
+   "term": "SLA",
+   "aliases": [
+    "Service Level Agreement"
+   ],
+   "category": "ITIL",
+   "def": "A documented agreement on service expectations between provider and customer.",
+   "example": "Our SLA guarantees 99.9% uptime for critical systems."
+  },
+  {
+   "term": "SOAR",
+   "aliases": [
+    "Security Orchestration, Automation, and Response"
+   ],
+   "category": "IT security",
+   "def": "Automated incident response workflows.",
+   "example": "SOAR automates phishing response actions."
+  },
+  {
+   "term": "SOP",
+   "aliases": [
+    "Standard Operating Procedure"
+   ],
+   "category": "IT security",
+   "def": "Documented steps for consistent execution.",
+   "example": "SOP defines patch testing before deployment."
+  },
+  {
+   "term": "Sponsor",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "The person who authorizes budget for service consumption.",
+   "example": "The CIO is the sponsor for our ITSM platform upgrade."
+  },
+  {
+   "term": "Subnet",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A subdivision of an IP network used to organize and secure traffic.",
+   "example": "Each OT zone is assigned a unique subnet for segmentation."
+  },
+  {
+   "term": "SVC",
+   "aliases": [
+    "Service Value Chain"
+   ],
+   "category": "ITIL",
+   "def": "Core activities that transform inputs into outputs to deliver value.",
+   "example": "The SVC includes planning, engaging, designing, and delivering services."
+  },
+  {
+   "term": "SVS",
+   "aliases": [
+    "Service Value System"
+   ],
+   "category": "ITIL",
+   "def": "The ITIL v4 model that integrates components and activities to co-create value through IT services.",
+   "example": "The SVS helps align IT services with business outcomes."
+  },
+  {
+   "term": "Switch",
+   "aliases": [],
+   "category": "Network and server architecture",
+   "def": "A Layer 2 device that connects devices within a LAN and forwards frames based on MAC addresses.",
+   "example": "The switch segments traffic between engineering workstations and printers."
+  },
+  {
+   "term": "System and Organization Controls (SOC) 2",
+   "aliases": [],
+   "category": "Regulations and frameworks",
+   "def": "Security, Availability, Processing Integrity, Confidentiality, Privacy."
+  },
+  {
+   "term": "Talent Solutions",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Recruiting, Onboarding, Performance, Learning."
+  },
+  {
+   "term": "Threat & Risk Catalogs",
+   "aliases": [],
+   "category": "Risk (SCF)",
+   "def": "Structured lists for assessment consistency."
+  },
+  {
+   "term": "User",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "The person who uses the service.",
+   "example": "Employees accessing the HR portal are users."
+  },
+  {
+   "term": "Utility",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "The functionality offered by a service—“fit for purpose.” ”The utility of our email service is its ability to send and receive messages.”"
+  },
+  {
+   "term": "Value Stream",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "A series of steps that create and deliver products or services.",
+   "example": "Our incident resolution value stream includes triage, diagnosis, and closure."
+  },
+  {
+   "term": "Virtual Machine",
+   "aliases": [
+    "VM"
+   ],
+   "category": "Network and server architecture",
+   "def": "A software-based emulation of a physical computer running an OS.",
+   "example": "Each department has its own VM for isolated workloads."
+  },
+  {
+   "term": "VLAN",
+   "aliases": [
+    "Virtual LAN"
+   ],
+   "category": "Network and server architecture",
+   "def": "Logical segmentation of a network to isolate traffic.",
+   "example": "Finance and HR systems are placed on separate VLANs."
+  },
+  {
+   "term": "VPMP",
+   "aliases": [
+    "Vulnerability & Patch Management Program"
+   ],
+   "category": "IT security",
+   "def": "A structured approach for identifying, prioritizing, and remediating vulnerabilities.",
+   "example": "The organization's VPMP ensures all critical patches are applied within 72 hours."
+  },
+  {
+   "term": "VPN",
+   "aliases": [
+    "Virtual Private Network"
+   ],
+   "category": "Network and server architecture",
+   "def": "A VPN is a secure, encrypted connection over a public or shared network (like the internet) that allows users to access private networks as if they were directly connected. VPNs protect data in transit and are commonly used for remote access, privacy, and secure communication.",
+   "example": "Employees working remotely use a VPN to securely connect to the corporate network and access internal systems."
+  },
+  {
+   "term": "WAN",
+   "aliases": [
+    "Wide Area Network"
+   ],
+   "category": "Network and server architecture",
+   "def": "A WAN is a telecommunications network that extends over a large geographic area and connects multiple smaller networks, such as LANs. WANs are used to link offices, data centers, or remote users across cities, countries, or continents. They typically rely on leased lines, MPLS, VPNs, or public internet infrastructure.",
+   "example": "“The organization uses a WAN to securely connect its manufacturing sites in the U.S., Europe, and Asia to the central data center in Arizona.”"
+  },
+  {
+   "term": "Warranty",
+   "aliases": [],
+   "category": "ITIL",
+   "def": "Assurance that a service meets agreed requirements—“fit for use.” ”Warranty includes uptime, performance, and support response times.”"
+  },
+  {
+   "term": "Web",
+   "aliases": [],
+   "category": "PeopleSoft",
+   "def": "Oracle WebLogic / IBM WebSphere (servlets, sessions)."
+  },
+  {
+   "term": "With ECC",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Direct RFC or HTTP connectors."
+  },
+  {
+   "term": "With SuccessFactors",
+   "aliases": [],
+   "category": "SAP",
+   "def": "Via SAP Cloud Platform Integration (CPI) or IAG Bridge for provisioning and risk analysis."
+  },
+  {
+   "term": "zenon Cloud Integration",
+   "aliases": [],
+   "category": "Zenon SCADA",
+   "def": "Optional modules and connectors enabling secure data exchange with cloud platforms (such as Azure IoT, AWS, or customer-specific clouds) for advanced analytics, remote monitoring, and enterprise integration."
+  },
+  {
+   "term": "zenon Communication Drivers",
+   "aliases": [],
+   "category": "Zenon SCADA",
+   "def": "A suite of native and third-party protocol drivers enabling connectivity with a wide range of PLCs, RTUs, DCSs, smart sensors, and industrial networks (e.g., OPC UA, Modbus, IEC 61850, BACnet). Facilitates secure, reliable, and flexible data acquisition through standardized and proprietary interfaces."
+  },
+  {
+   "term": "zenon Editor",
+   "aliases": [],
+   "category": "Zenon SCADA",
+   "def": "Graphical configuration and engineering tool used to design, test, and manage SCADA projects. Engineers use it to define process graphics, alarms, reports, scripts, and communication interfaces before deploying to runtime environments."
+  },
+  {
+   "term": "zenon Historian",
+   "aliases": [],
+   "category": "Zenon SCADA",
+   "def": "An integrated time-series database optimized for recording high-frequency operational data, events, and alarms from the process layer. Supports efficient compression, secure data retention, and playback for root cause analysis and reporting."
+  },
+  {
+   "term": "zenon Runtime",
+   "aliases": [],
+   "category": "Zenon SCADA",
+   "def": "The execution environment where project applications run, providing real-time process visualization, alarms, and control interface for operators. Manages data acquisition, visualization, and direct interaction with connected systems and hardware."
+  },
+  {
+   "term": "zenon Service Grid",
+   "aliases": [],
+   "category": "Zenon SCADA",
+   "def": "Service-oriented middleware for scalable integration, distributed data aggregation, and cross-site management. Enables secure data exchange and application interoperability across decentralized facilities, leveraging APIs and microservices to connect to MES, ERP, cloud, and analytics platforms."
+  },
+  {
+   "term": "zenon Web Server/Web Client",
+   "aliases": [],
+   "category": "Zenon SCADA",
+   "def": "Web-based architecture components that deliver process visualizations and dashboards to operators and managers across internal networks and the internet, supporting mobility and collaboration. Ensures secure access to real-time and historical process data from browsers and mobile devices."
+  },
+  {
+   "term": "Zero Trust Architecture",
+   "aliases": [
+    "ZTA"
+   ],
+   "category": "IT security",
+   "def": "Per NIST SP 800-207: Per-session access; continuous verification.",
+   "example": "Implementing ZTA ensures least privilege access."
+  },
+  {
+   "term": "Zones & Conduits",
+   "aliases": [],
+   "category": "OT and ICS",
+   "def": "Defined by ISA/IEC 62443—zones group assets with similar security needs; conduits manage secure communication between zones."
+  }
+ ]
+}
