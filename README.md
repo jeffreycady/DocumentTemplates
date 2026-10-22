@@ -22,7 +22,7 @@ Free Word templates for IT and security documentation, plus a glossary of common
 | Glossary | |
 |---|---|
 | [Common Terms Glossary: IT, OT and Security](Common_Terms_Glossary_IT_OT_Security_v1.docx) ([PDF](Common_Terms_Glossary_IT_OT_Security_v1.pdf)) | OT and ICS (including the Purdue model), core IT, IT security, network and server architecture, ITIL, regulations and frameworks, SCF risk terms, SAP, PeopleSoft, AVEVA PI and Zenon SCADA |
-| [`glossary/glossary.json`](glossary/glossary.json) | The same glossary as data (term, other names, category, definition, example, source), made by `scripts/make_glossary.py` |
+| [`glossary/glossary.json`](glossary/glossary.json) | The glossary as data (236 terms: term, other names, category, definition, example, source), made by `scripts/make_glossary.py` from the Word glossary plus [`glossary/additions.json`](glossary/additions.json): identity and access, security tools, vulnerability management, resilience, threats, frameworks and OT basics |
 
 ## Using the templates
 
@@ -39,7 +39,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). In short: search the [online glossary](h
 ```
 *.docx, *.pdf                the templates and the glossary (the originals)
 glossary/glossary.json       the glossary as data (made from the Word glossary)
-glossary/additions.json      terms added from suggestions (kept through rebuilds)
+glossary/additions.json      terms added or corrected after the Word glossary (kept through rebuilds)
+glossary/removals.json       Word glossary entries left out (replaced, duplicates or notes)
 web/templates.json           the places in each template the online form fills in
 scripts/make_manifest.py     rebuilds web/templates.json and checks it against the templates
 scripts/make_glossary.py     rebuilds glossary/glossary.json

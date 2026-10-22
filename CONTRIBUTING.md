@@ -12,7 +12,7 @@ Or [open a glossary issue here](https://github.com/jeffreycady/DocumentTemplates
 - add the expansion of an acronym, an example of use and a source if you have them;
 - leave out anything confidential about your organization.
 
-Each suggestion is checked before it goes in. Accepted terms are added to [`glossary/additions.json`](glossary/additions.json) (the same fields as `glossary/glossary.json`: `term`, `aliases`, `category`, `def`, and optional `example` and `source`), so they survive the next rebuild from the Word glossary.
+Each suggestion is checked before it goes in. Accepted terms (and corrections to existing ones, under the same term) are added to [`glossary/additions.json`](glossary/additions.json) (the same fields as `glossary/glossary.json`: `term`, `aliases`, `category`, `def`, and optional `example` and `source`), so they survive the next rebuild from the Word glossary. Entries from the Word glossary that are replaced, duplicated or aren't really terms are listed in [`glossary/removals.json`](glossary/removals.json). The build stops if two entries share a name or another name.
 
 You can also send a pull request that edits `glossary/additions.json` directly.
 

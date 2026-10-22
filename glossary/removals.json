@@ -1,0 +1,32 @@
+{
+ "note": "Terms from the Word glossary left out of glossary.json: replaced by a cleaner entry in additions.json, duplicates, or notes rather than terms.",
+ "terms": [
+  "Cybersecurity Maturity Model Certification (CMMC) 2.0",
+  "Health Insurance Portability and Accountability Act (HIPAA) Security Rule",
+  "Payment Card Industry Data Security Standard (PCI DSS) v4.0.1",
+  "Sarbanes-Oxley Act (SOX) §404",
+  "System and Organization Controls (SOC) 2",
+  "Campus Solutions details",
+  "Roadmap & support",
+  "PUM benefits & cadence",
+  "Consuming external REST",
+  "Network segmentation",
+  "Identity & APIs",
+  "Patching",
+  "DB",
+  "Access Control",
+  "Process Control",
+  "Risk Management",
+  "Audit Management",
+  "ASF",
+  "PUM",
+  "OCI",
+  "Operational Technology",
+  "International Traffic in Arms Regulations",
+  "Cybersecurity & Privacy Risk Management Model",
+  "2-tier",
+  "3-tier",
+  "4-tier",
+  "Integration Broker"
+ ]
+}
