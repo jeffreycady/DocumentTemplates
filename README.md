@@ -21,7 +21,7 @@ Free Word templates for IT and security documentation, plus a glossary of common
 
 | Glossary | |
 |---|---|
-| [Common Terms Glossary: IT, OT and Security](Common_Terms_Glossary_IT_OT_Security_v1.docx) ([PDF](Common_Terms_Glossary_IT_OT_Security_v1.pdf)) | OT and ICS (including the Purdue model), core IT, IT security, network and server architecture, ITIL, regulations and frameworks, SCF risk terms, SAP, PeopleSoft, AVEVA PI and Zenon SCADA |
+| [Common Terms Glossary: IT, OT and Security](Common_Terms_Glossary_IT_OT_Security_v1.docx) ([PDF](Common_Terms_Glossary_IT_OT_Security_v1.pdf)) | 236 terms: OT and ICS (including the Purdue model), core IT, IT security, network and server architecture, ITIL, regulations and frameworks, SCF risk terms, SAP, PeopleSoft, AVEVA PI and Zenon SCADA, plus identity and access, security tools, vulnerability management, continuity and recovery, and the document types these templates cover |
 | [`glossary/glossary.json`](glossary/glossary.json) | The glossary as data (236 terms: term, other names, category, definition, example, source), made by `scripts/make_glossary.py` from the Word glossary plus [`glossary/additions.json`](glossary/additions.json): identity and access, security tools, vulnerability management, resilience, threats, frameworks and OT basics |
 
 ## Using the templates
@@ -44,6 +44,7 @@ glossary/removals.json       Word glossary entries left out (replaced, duplicate
 web/templates.json           the places in each template the online form fills in
 scripts/make_manifest.py     rebuilds web/templates.json and checks it against the templates
 scripts/make_glossary.py     rebuilds glossary/glossary.json
+scripts/update_word_glossary.py  writes additions.json into the Word glossary (then rebuild the PDF)
 ```
 
 ## License

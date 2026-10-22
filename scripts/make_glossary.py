@@ -62,6 +62,7 @@ def build():
         if p.style.name.startswith("Heading 1"):
             m = re.match(r"^([A-M])\)\s", t)
             if m: sec, block, reading = m.group(1), None, False; continue
+            if re.match(r"^[N-Z]\)\s", t): sec = None; continue   # written from additions.json by update_word_glossary.py
             if t.startswith("Appendix"): sec = None; continue
             if sec in ("L",) and ":" in t:       # AVEVA entries are styled as headings
                 pass

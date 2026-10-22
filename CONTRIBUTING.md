@@ -28,6 +28,8 @@ The free form-filler and glossary on www.mansiosec.com read two files made from 
 pip install python-docx
 python3 scripts/make_manifest.py     # web/templates.json: the places in each template the form fills in
 python3 scripts/make_glossary.py     # glossary/glossary.json: the glossary, from the Word glossary and additions.json
+python3 scripts/update_word_glossary.py   # writes additions.json into the Word glossary, sections N) onwards
+soffice --headless --convert-to pdf Common_Terms_Glossary_IT_OT_Security_v1.docx   # and its PDF
 ```
 
 `make_manifest.py` checks every place against the template's current text and stops if one has moved, so an edited template can't be filled in the wrong spot.
