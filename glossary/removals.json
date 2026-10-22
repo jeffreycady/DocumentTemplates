@@ -1,11 +1,6 @@
 {
- "note": "Terms from the Word glossary left out of glossary.json: replaced by a cleaner entry in additions.json, duplicates, or notes rather than terms.",
+ "note": "Entries in the Word glossary's sections A) to M) left out of glossary.json: duplicates, or notes rather than terms. (Entries corrected in additions.json are removed from the Word file by update_word_glossary.py.)",
  "terms": [
-  "Cybersecurity Maturity Model Certification (CMMC) 2.0",
-  "Health Insurance Portability and Accountability Act (HIPAA) Security Rule",
-  "Payment Card Industry Data Security Standard (PCI DSS) v4.0.1",
-  "Sarbanes-Oxley Act (SOX) §404",
-  "System and Organization Controls (SOC) 2",
   "Campus Solutions details",
   "Roadmap & support",
   "PUM benefits & cadence",
